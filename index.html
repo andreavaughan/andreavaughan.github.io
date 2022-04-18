@@ -345,6 +345,7 @@
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800" id="oe-campaign-settings-account-info-2000">Dashboard</h1>
             <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" id="feedback-btn-1" data-id="1.0-Nav-Home.Dashboard"><i class="fas fa-download fa-sm text-white-50"></i> Leave Feedback</a>
+            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-secondary shadow-sm" id="feedback-btn-2" data-id="1.0-Nav-Home.Dashboard"><i class="fas fa-download fa-sm text-white-50"></i> Test Button to Remove</a>
           </div>
 
           <!-- Content Row -->
@@ -520,7 +521,7 @@
                   <div class="progress mb-4">
                     <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
-                  <h4 class="small font-weight-bold">Customer Database <span class="float-right">60%</span></h4>
+                  <h4 class="small font-weight-bold">Customer DB <br> Database  <span class="float-right">60%</span></h4>
                   <div class="progress mb-4">
                     <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
@@ -678,24 +679,7 @@
   <script src="js/demo/chart-pie-demo.js"></script>
 
   <!-- Track Event Stuff -->
-   <script>
-   (function dropDownMenu() {
-
-    // Change the CSS selector in the parenthesis to match your select menu
-    var selectMenu = document.getElementById('dropdown');
-
-    var callback = function(e) {
-      var selectedOption = e.target.options[e.target.selectedIndex];
-      window.dataLayer.push({
-        event: 'selectionMade',
-        selectedElement: selectedOption
-      });
-    };
-
-  })();
-
-
-// </script>
+  <script src="./js/track-events.js" defer></script>
 
  <!-- Pendo Scripts -->
  <script>
@@ -710,9 +694,9 @@
           // Please use Strings, Numbers, or Bools for value types.
           pendo.initialize({
               visitor: {
-                  id:              'onboarding-vis1',   // Required if user is logged in
-                  email:           'test@email.com',    // Recommended if using Pendo Feedback, or NPS Email
-                  full_name:       'Andrea Vaughan',    // Recommended if using Pendo Feedback
+                  id:              'visitor6000',   // Required if user is logged in
+                  email:           'testy-mail+23@email.com',    // Recommended if using Pendo Feedback, or NPS Email
+                  full_name:       'Test',    // Recommended if using Pendo Feedback
                   // role:         // Optional
   
                   // You can add any additional visitor level key-values here,
@@ -720,7 +704,7 @@
               },
   
               account: {
-                  id:           'andrea-test-demo', // Required if using Pendo Feedback
+                  id:           '2.16.840.1.113883.3.140.61059', // Required if using Pendo Feedback
                   // name:         // Optional
                   // is_paying:    // Recommended if using Pendo Feedback
                   // monthly_value:// Recommended if using Pendo Feedback
