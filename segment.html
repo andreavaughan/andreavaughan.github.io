@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>AV Test Site
+  <title>Homepage but make it SEGMENT
   </title>
 
   <!-- Custom fonts for this template-->
@@ -19,7 +19,7 @@
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
 <!-- Pendo Scripts -->
-<script>
+<!-- <script>
   (function(apiKey){
       (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
       v=['initialize','identify','updateOptions','pageLoad','track'];for(w=0,x=v.length;w<x;++w)(function(m){
@@ -31,8 +31,8 @@
           // Please use Strings, Numbers, or Bools for value types.
           pendo.initialize({
               visitor: {
-                  id:              'hellonewvisitor',   // Required if user is logged in
-                  email:           'hello@email.com',    // Recommended if using Pendo Feedback, or NPS Email
+                  id:              'visitor3000',   // Required if user is logged in
+                  email:           'visitor3000@email.com',    // Recommended if using Pendo Feedback, or NPS Email
                   full_name:       'Test',
                   xtra_data:       'something here for payload'
                   // role:         // Optional
@@ -42,9 +42,9 @@
               },
   
               account: {
-                  // id:           '2.16.840.1.113883.3.140.61059', // Required if using Pendo Feedback
-                  // hostname:     'HOSTNAME',
-                  // business_name: 'testbusiness'
+                  id:           '2.16.840.1.113883.3.140.61059', // Required if using Pendo Feedback
+                  hostname:     'HOSTNAME',
+                  business_name: 'testbusiness'
                   // name:         // Optional
                   // is_paying:    // Recommended if using Pendo Feedback
                   // monthly_value:// Recommended if using Pendo Feedback
@@ -57,7 +57,7 @@
               }
           });
   })('e013cfb9-d43a-4469-7bae-4916e01ed7b4');
-  </script>
+  </script> -->
 
 </head>
 
@@ -74,7 +74,7 @@
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+        <div class="sidebar-brand-text mx-3"> HOMEPAGE <sup>2</sup></div>
       </a>
 
       <!-- Divider -->
@@ -176,28 +176,6 @@
           <span>Location API - TEST</span></a>
       </li>
 
-      <!-- Nav Item - Segment Install -->
-      <li class="nav-item">
-        <a class="nav-link" href="segment.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>SEGMENT INSTALL - TEST</span></a>
-
-      <!-- Nav Item - Long URL test -->
-      <li class="nav-item">
-        <a class="nav-link" href="/testreallylongurlwowthisissolongalskjfasdlfagjlijahihoiaiadijdaoijgnajnasflwelqoqrlkjqtpoadoibaoinsgjwotjq3pjgwlabldnsrpsoeeipiwtpj42nl3qhpoahwJ.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Long URL - TEST</span></a>
-
-      </li>
-
-      <!-- Nav Item - GTM test -->
-      <li class="nav-item">
-        <a class="nav-link" href="/tagmanager.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Google Tag Manager - TEST</span></a>
-
-      </li>
-
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
 
@@ -214,6 +192,9 @@
 
       <!-- Main Content -->
       <div id="content">
+        <div>
+            <h1>This Page has Segment.com installed on it!!!</h1>
+        </div>
 
         <!-- Topbar -->
         <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
@@ -750,8 +731,31 @@
   <!-- Track Event Stuff -->
   <script src="./js/track-events.js" defer></script>
 
- 
-<!-- Start of goose-test Zendesk Widget script --><script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=a97962cd-1ac1-4e2c-b0ae-6c4e269709c3"> </script><!-- End of goose-test Zendesk Widget script -->
+<!--Andrea's Segment Script-->
+<script>
+    !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="nDrTPYTUMWJ98rvplyHQZ2T2mEHJ8fqS";;analytics.SNIPPET_VERSION="4.15.3";
+    analytics.load("nDrTPYTUMWJ98rvplyHQZ2T2mEHJ8fqS");
+    analytics.page();
+    
+    }}();
+
+    analytics.identify('visitor-segment-id', {
+        name: "My Name", 
+        email: "anotheremail@email.com", 
+        something: "this came from Segment"
+    });
+    analytics.group('segmentaccountid', {
+        accountname: "Real Account", 
+        wow: "wow",
+    });
+
+    analytics.track()
+</script>
+
+
+<!-- Start of goose-test Zendesk Widget script -->
+<!-- <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=a97962cd-1ac1-4e2c-b0ae-6c4e269709c3"> </script> -->
+<!-- End of goose-test Zendesk Widget script -->
 
 
  <!-- <script> 
