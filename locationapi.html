@@ -47,11 +47,25 @@
                 }, 
 
                 location: {
-                    transforms: [{attr: 'search', action: 'Replace', data: ['thisisatest=true']}]
+                  setUrl: 'http://localhost:8000/locationapi-test/somemore-things-here',  
+                  // transforms: [{attr: 'search', action: 'Replace', data: ['thisisatest=true']}], 
+                     
                 }
             });
+ 
     })('e013cfb9-d43a-4469-7bae-4916e01ed7b4');
     </script>
+    <!-- <script defer>
+      function callLocationApi(){
+        pendo.location.setUrl('http://localhost:8000/shiny-new-url')
+        
+      }; 
+      
+      setTimeout(callLocationApi(), 15000);
+    </script> -->
+    
+       <!-- Other Location Api Test -->
+   <script src="./js/locationapi.js" defer></script>
 </head>
 <body>
     <!-- Page Wrapper -->
@@ -443,7 +457,7 @@
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
 
-  
+
     
 </body>
 </html>

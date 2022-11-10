@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      (function(apiKey){
+          (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
+          v=['initialize','identify','updateOptions','pageLoad','track'];for(w=0,x=v.length;w<x;++w)(function(m){
+              o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
+              y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+apiKey+'/pendo.js';
+              z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
+      
+              // Call this whenever information about your visitors becomes available
+              // Please use Strings, Numbers, or Bools for value types.
+              pendo.initialize({
+                  visitor: {
+                      id:              'hellonewvisitor',   // Required if user is logged in
+                      email:           'hello@email.com',    // Recommended if using Pendo Feedback, or NPS Email
+                      full_name:       'Test',
+                      xtra_data:       'something here for payload'
+                      // role:         // Optional
+      
+                      // You can add any additional visitor level key-values here,
+                      // as long as it's not one of the above reserved names.
+                  },
+      
+                  account: {
+                      // id:           '2.16.840.1.113883.3.140.61059', // Required if using Pendo Feedback
+                      // hostname:     'HOSTNAME',
+                      // business_name: 'testbusiness'
+                      // name:         // Optional
+                      // is_paying:    // Recommended if using Pendo Feedback
+                      // monthly_value:// Recommended if using Pendo Feedback
+                      // planLevel:    // Optional
+                      // planPrice:    // Optional
+                      // creationDate: // Optional
+      
+                      // You can add any additional account level key-values here,
+                      // as long as it's not one of the above reserved names.
+                  }
+              });
+      })('e013cfb9-d43a-4469-7bae-4916e01ed7b4');
+      </script>
+  </head>
+  <body>
+    <div
+      data-id="filter_select"
+      data-filter-row=""
+      class="margin-bottom"
+      data-nohide=""
+      style="
+        order: 9999;
+        -webkit-box-ordinal-group: 9999;
+        -moz-box-ordinal-group: 9999;
+        -ms-flex-order: 9999;
+        -webkit-order: 9999;
+      "
+    >
+      <a
+        data-id="filter_add"
+        class="btn btn-add-filter btn-caps js-addRow hidden"
+        href="#"
+      >
+        <span>Add filter</span>
+      </a>
+      <select
+        class="js-selectFilters hidden"
+        data-placeholder="Select A Filter"
+        data-exclude=""
+        style="display: none"
+      >
+        <option value=""></option>
+        <option value="adType">Ad Types</option>
+        <option value="dateRangeType">Date Range Type</option>
+        <option value="dayPartId" class="d-none">Dayparts</option>
+        <option value="scheduleType">Episode Types</option>
+        <option value="scheduleId">Episodes</option>
+        <option value="eventId">Event Mentions</option>
+        <option value="language">Language</option>
+        <option value="networkType" class="d-none">Network Types</option>
+        <option value="networkHash">Networks</option>
+        <option value="productCategoryHash">Product Types</option>
+        <option value="productHash">Products</option>
+        <option value="genreId">Show Genres</option>
+        <option value="showType">Show Types</option>
+        <option value="showId">Shows</option>
+        <option value="adHash">Spots</option>
+        <option value="subgenreId">Subgenres</option>
+      </select>
+      <div
+        class="chosen-container chosen-container-single chosen-with-drop chosen-container-active"
+        title=""
+        style="width: 100%"
+      >
+        <a class="chosen-single chosen-default">
+          <span>Select A Filter</span>
+          <div><b></b></div>
+        </a>
+        <div class="chosen-drop">
+          <div class="chosen-search">
+            <input class="chosen-search-input" type="text" autocomplete="off" />
+          </div>
+          <ul class="chosen-results">
+            <li class="active-result" data-option-array-index="1">Ad Types</li>
+            <li class="active-result" data-option-array-index="2">
+              Date Range Type
+            </li>
+            <li class="active-result d-none" data-option-array-index="3">
+              Dayparts
+            </li>
+            <li class="active-result" data-option-array-index="4">
+              Episode Types
+            </li>
+            <li class="active-result" data-option-array-index="5">Episodes</li>
+            <li class="active-result" data-option-array-index="6">
+              Event Mentions
+            </li>
+            <li class="active-result" data-option-array-index="7">Language</li>
+            <li class="active-result d-none" data-option-array-index="8">
+              Network Types
+            </li>
+            <li class="active-result" data-option-array-index="9">Networks</li>
+            <li class="active-result" data-option-array-index="10">
+              Product Types
+            </li>
+            <li class="active-result" data-option-array-index="11">Products</li>
+            <li class="active-result" data-option-array-index="12">
+              Show Genres
+            </li>
+            <li class="active-result" data-option-array-index="13">
+              Show Types
+            </li>
+            <li class="active-result" data-option-array-index="14">Shows</li>
+            <li class="active-result" data-option-array-index="15">Spots</li>
+            <li class="active-result" data-option-array-index="16">
+              Subgenres
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="js-AllFiltersSelected text-light hidden">
+        You've added every filter available. Nice!
+      </p>
+    </div>
+  </body>
+</html>

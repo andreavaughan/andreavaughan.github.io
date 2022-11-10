@@ -20,8 +20,7 @@
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
 <!-- Pendo Scripts -->
 <script>
-
-    (function(apiKey){
+  (function(apiKey){
       (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
       v=['initialize','identify','updateOptions','pageLoad','track'];for(w=0,x=v.length;w<x;++w)(function(m){
           o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
@@ -30,11 +29,10 @@
   
           // Call this whenever information about your visitors becomes available
           // Please use Strings, Numbers, or Bools for value types.
-
           pendo.initialize({
               visitor: {
-                  id:              'visitor6000',   // plz change back to visitor6000 after testing
-                  email:           'visitor6000@email.com',    // Recommended if using Pendo Feedback, or NPS Email
+                  id:              "visitor6000",   // Required if user is logged in
+                  // email:           'hello@email.com',    // Recommended if using Pendo Feedback, or NPS Email
                   // full_name:       'Test',
                   // xtra_data:       'something here for payload'
                   // role:         // Optional
@@ -59,9 +57,6 @@
               }
           });
   })('e013cfb9-d43a-4469-7bae-4916e01ed7b4');
-
-
-  
   </script>
 
 </head>
@@ -200,22 +195,6 @@
         <a class="nav-link" href="/tagmanager.html">
           <i class="fas fa-fw fa-table"></i>
           <span>Google Tag Manager - TEST</span></a>
-
-      </li>
-
-      <!-- Nav Item - Iframe different api key test -->
-      <li class="nav-item">
-        <a class="nav-link" href="/iframepage.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Iframed page TEST</span></a>
-
-      </li>
-
-      <!-- Nav Item - different api key test -->
-      <li class="nav-item">
-        <a class="nav-link" href="/differentapp.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Let's pretend this page is a different app</span></a>
 
       </li>
 
@@ -538,11 +517,9 @@
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                   <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
                   <div class="dropdown no-arrow">
-                    <button class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <a>
-                        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                      </a>
-                    </button>
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                    </a>
                     <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
                       <div class="dropdown-header">Dropdown Header:</div>
                       <a class="dropdown-item" href="#">Action</a>

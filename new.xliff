@@ -1,0 +1,377 @@
+{
+        "createdByUser": {
+            "id": "4551166896504832",
+            "username": "rbitran@agendapro.com",
+            "first": "Rodrigo",
+            "last": "Bitran",
+            "role": 2,
+            "userType": "normal",
+            "hasLoggedIn": true,
+            "lastLogin": 1665156323130,
+            "visitorIds": [
+                "1602",
+                "184026",
+                "122395",
+                "225834",
+                "228190",
+                "229271",
+                "233044"
+            ]
+        },
+        "createdAt": 1660669727748,
+        "lastUpdatedByUser": {
+            "id": "4551166896504832",
+            "username": "rbitran@agendapro.com",
+            "first": "Rodrigo",
+            "last": "Bitran",
+            "role": 2,
+            "userType": "normal",
+            "hasLoggedIn": true,
+            "lastLogin": 1665156323130,
+            "visitorIds": [
+                "1602",
+                "184026",
+                "122395",
+                "225834",
+                "228190",
+                "229271",
+                "233044"
+            ]
+        },
+        "lastUpdatedAt": 1665006874990,
+        "kind": "Guide",
+        "rootVersionId": "1FpVFQIPaGTX9DLu6Zyf5m_Y2hE",
+        "stableVersionId": "1FpVFQIPaGTX9DLu6Zyf5m_Y2hE-20221005215435.026288429",
+        "appId": -323232,
+        "appIds": [
+            -323232
+        ],
+        "id": "1FpVFQIPaGTX9DLu6Zyf5m_Y2hE",
+        "name": "Recomendados Admin Gral",
+        "state": "public",
+        "emailState": "",
+        "launchMethod": "auto",
+        "isMultiStep": false,
+        "isTraining": false,
+        "steps": [
+            {
+                "id": "-bPe5F153YVhR3ccmi2BoKStI28",
+                "guideId": "1FpVFQIPaGTX9DLu6Zyf5m_Y2hE",
+                "templateId": "building-block-guide",
+                "type": "building-block",
+                "elementPathRule": "[data-pendo=\"referral\"][type=\"button\"]",
+                "contentType": "text/html; charset=utf-8",
+                "buildingBlocksUrl": "https://pendo-static-6288142318305280.storage.googleapis.com/guide-content/1FpVFQIPaGTX9DLu6Zyf5m_Y2hE/-bPe5F153YVhR3ccmi2BoKStI28/Iwy4VCRmDWivpEcKY3mN0AWh9V0.buildingBlocks.json",
+                "domUrl": "https://pendo-static-6288142318305280.storage.googleapis.com/guide-content/1FpVFQIPaGTX9DLu6Zyf5m_Y2hE/-bPe5F153YVhR3ccmi2BoKStI28/jIArtNjkOwztg_GUI3wo0GCWwqw.dom.json?sha256=AFxJfqfoPsLTKtQo1b_6TLS_NrKfpZhLskebmxkjxAc",
+                "domJsonpUrl": "https://pendo-static-6288142318305280.storage.googleapis.com/guide-content/1FpVFQIPaGTX9DLu6Zyf5m_Y2hE/-bPe5F153YVhR3ccmi2BoKStI28/xVBcJJVBpX44DnJAJS4GWE_RCSg.dom.jsonp?sha256=KQzBTwZUFGZzWcfS3iKyVYqi98AgcC_6y_LK-MXiHEA",
+                "rank": 5000000,
+                "advanceMethod": "button",
+                "attributes": {
+                    "css": "",
+                    "themeId": "wFrvlwO_vw5hZgnywlO6oWue04Q",
+                    "isAutoFocus": true,
+                    "blockOutUI": {
+                        "additionalElements": "",
+                        "enabled": false,
+                        "padding": {
+                            "bottom": 0,
+                            "left": 0,
+                            "right": 0,
+                            "top": 0
+                        }
+                    },
+                    "elementSelectionType": "custom",
+                    "advanceActions": {
+                        "elementClick": true,
+                        "elementHover": false
+                    }
+                },
+                "lastUpdatedAt": 1662053084087,
+                "resetAt": 0,
+                "launchUrl": "https://agendapro.com/cl/bookings"
+            }
+        ],
+        "attributes": {
+            "type": "building-block",
+            "device": {
+                "type": "desktop"
+            },
+            "priority": 115,
+            "sharedServiceVersion": "4.0.5"
+        },
+        "audience": [
+            {
+                "source": {
+                    "visitors": null
+                }
+            },
+            {
+                "eval": {
+                    "accountId": "metadata.auto.accountids"
+                }
+            },
+            {
+                "unwind": {
+                    "field": "accountId",
+                    "keepEmpty": true
+                }
+            },
+            {
+                "bulkExpand": {
+                    "account": {
+                        "account": "accountId"
+                    }
+                }
+            },
+            {
+                "filter": "contains(metadata.agent.role,\"General\")"
+            },
+            {
+                "filter": "metadata.auto.firstvisit<=dateAdd(now(),-1,\"days\")"
+            },
+            {
+                "filter": "account.auto.id!=\"66566\""
+            },
+            {
+                "select": {
+                    "visitorId": "visitorId",
+                    "accountId": "accountId"
+                }
+            },
+            {
+                "identified": "visitorId"
+            }
+        ],
+        "audienceUiHint": {
+            "filters": [
+                {
+                    "key": "420356d5-cefe-4f3b-847d-1008f0eeef5f",
+                    "group": "agent",
+                    "kind": "visitor",
+                    "field": "visitor.agent.role",
+                    "id": "visitor_agent_role",
+                    "type": "visitor.agent.role",
+                    "name": "role",
+                    "schema": "string",
+                    "elementType": "string",
+                    "operator": "contains",
+                    "value": "General",
+                    "$valid": true
+                },
+                {
+                    "key": "c4cd3675-98af-4111-b9d2-ea311ca4825f",
+                    "group": "auto",
+                    "kind": "visitor",
+                    "field": "visitor.auto.firstvisit",
+                    "id": "visitor_auto_firstvisit",
+                    "type": "visitor.auto.firstvisit",
+                    "name": "First Visit",
+                    "schema": "time",
+                    "elementType": "",
+                    "operator": "!withinLast",
+                    "value": "2022-09-12",
+                    "$valid": true,
+                    "count": 1,
+                    "granularity": "days"
+                },
+                {
+                    "key": "0123bfd6-c647-44e4-bf4b-216c434db8bd",
+                    "group": "auto",
+                    "kind": "account",
+                    "field": "account.auto.id",
+                    "id": "account_auto_id",
+                    "type": "account.auto.id",
+                    "name": "Account ID",
+                    "schema": "string",
+                    "elementType": "",
+                    "operator": "!=",
+                    "value": "66566",
+                    "$valid": true
+                }
+            ]
+        },
+        "authoredLanguage": "en-US",
+        "recurrence": 0,
+        "recurrenceEligibilityWindow": 0,
+        "resetAt": 0,
+        "publishedAt": 1660670114408,
+        "currentFirstEligibleToBeSeenAt": 1660670114408,
+        "redisplay": {
+            "interval": 1296000000,
+            "elementId": "",
+            "timeUnit": "Day",
+            "maxDismissals": 3
+        },
+        "isTopLevel": false,
+        "isModule": false,
+        "editorType": "visualDesignStudio"
+    },
+    {
+        "createdByUser": {
+            "id": "4551166896504832",
+            "username": "rbitran@agendapro.com",
+            "first": "Rodrigo",
+            "last": "Bitran",
+            "role": 2,
+            "userType": "normal",
+            "hasLoggedIn": true,
+            "lastLogin": 1665156323130,
+            "visitorIds": [
+                "1602",
+                "184026",
+                "122395",
+                "225834",
+                "228190",
+                "229271",
+                "233044"
+            ]
+        },
+        "createdAt": 1660669727748,
+        "lastUpdatedByUser": {
+            "id": "4551166896504832",
+            "username": "rbitran@agendapro.com",
+            "first": "Rodrigo",
+            "last": "Bitran",
+            "role": 2,
+            "userType": "normal",
+            "hasLoggedIn": true,
+            "lastLogin": 1665156323130,
+            "visitorIds": [
+                "1602",
+                "184026",
+                "122395",
+                "225834",
+                "228190",
+                "229271",
+                "233044"
+            ]
+        },
+        "lastUpdatedAt": 1662999453858,
+        "appId": -323232,
+        "appIds": [
+            -323232
+        ],
+        "id": "1FpVFQIPaGTX9DLu6Zyf5m_Y2hE-20220912161733.876229030",
+        "name": "Recomendados Admin Gral",
+        "state": "public",
+        "emailState": "",
+        "launchMethod": "auto",
+        "isMultiStep": false,
+        "isTraining": false,
+        "steps": [
+            {
+                "id": "-bPe5F153YVhR3ccmi2BoKStI28",
+                "guideId": "1FpVFQIPaGTX9DLu6Zyf5m_Y2hE",
+                "templateId": "building-block-guide",
+                "type": "building-block",
+                "elementPathRule": "[data-pendo=\"referral\"][type=\"button\"]",
+                "contentType": "text/html; charset=utf-8",
+                "buildingBlocksUrl": "https://pendo-static-6288142318305280.storage.googleapis.com/guide-content/1FpVFQIPaGTX9DLu6Zyf5m_Y2hE/-bPe5F153YVhR3ccmi2BoKStI28/Iwy4VCRmDWivpEcKY3mN0AWh9V0.buildingBlocks.json",
+                "domUrl": "https://pendo-static-6288142318305280.storage.googleapis.com/guide-content/1FpVFQIPaGTX9DLu6Zyf5m_Y2hE/-bPe5F153YVhR3ccmi2BoKStI28/jIArtNjkOwztg_GUI3wo0GCWwqw.dom.json?sha256=AFxJfqfoPsLTKtQo1b_6TLS_NrKfpZhLskebmxkjxAc",
+                "domJsonpUrl": "https://pendo-static-6288142318305280.storage.googleapis.com/guide-content/1FpVFQIPaGTX9DLu6Zyf5m_Y2hE/-bPe5F153YVhR3ccmi2BoKStI28/xVBcJJVBpX44DnJAJS4GWE_RCSg.dom.jsonp?sha256=KQzBTwZUFGZzWcfS3iKyVYqi98AgcC_6y_LK-MXiHEA",
+                "rank": 5000000,
+                "advanceMethod": "button",
+                "attributes": {
+                    "css": "",
+                    "themeId": "wFrvlwO_vw5hZgnywlO6oWue04Q",
+                    "isAutoFocus": true,
+                    "blockOutUI": {
+                        "additionalElements": "",
+                        "enabled": false,
+                        "padding": {
+                            "bottom": 0,
+                            "left": 0,
+                            "right": 0,
+                            "top": 0
+                        }
+                    },
+                    "elementSelectionType": "custom",
+                    "advanceActions": {
+                        "elementClick": true,
+                        "elementHover": false
+                    }
+                },
+                "lastUpdatedAt": 1662053084087,
+                "resetAt": 0,
+                "launchUrl": "https://agendapro.com/cl/bookings"
+            }
+        ],
+        "attributes": {
+            "type": "building-block",
+            "device": {
+                "type": "desktop"
+            },
+            "priority": 115,
+            "sharedServiceVersion": "4.0.5"
+        },
+        "audience": [
+            {
+                "source": {
+                    "visitors": null
+                }
+            },
+            {
+                "filter": "contains(metadata.agent.role,\"General\")"
+            },
+            {
+                "filter": "metadata.auto.firstvisit<=dateAdd(now(),-1,\"days\")"
+            },
+            {
+                "select": {
+                    "visitorId": "visitorId"
+                }
+            },
+            {
+                "identified": "visitorId"
+            }
+        ],
+        "audienceUiHint": {
+            "filters": [
+                {
+                    "key": "420356d5-cefe-4f3b-847d-1008f0eeef5f",
+                    "group": "agent",
+                    "kind": "visitor",
+                    "field": "visitor.agent.role",
+                    "id": "visitor_agent_role",
+                    "type": "visitor.agent.role",
+                    "name": "role",
+                    "schema": "string",
+                    "elementType": "string",
+                    "operator": "contains",
+                    "value": "General",
+                    "$valid": true
+                },
+                {
+                    "key": "c4cd3675-98af-4111-b9d2-ea311ca4825f",
+                    "group": "auto",
+                    "kind": "visitor",
+                    "field": "visitor.auto.firstvisit",
+                    "id": "visitor_auto_firstvisit",
+                    "type": "visitor.auto.firstvisit",
+                    "name": "First Visit",
+                    "schema": "time",
+                    "elementType": "",
+                    "operator": "!withinLast",
+                    "value": "2022-09-12",
+                    "$valid": true,
+                    "count": 1,
+                    "granularity": "days"
+                }
+            ]
+        },
+        "authoredLanguage": "en-US",
+        "recurrence": 0,
+        "recurrenceEligibilityWindow": 0,
+        "resetAt": 0,
+        "publishedAt": 1660670114408,
+        "currentFirstEligibleToBeSeenAt": 1660670114408,
+        "redisplay": {
+            "interval": 1296000000,
+            "elementId": "",
+            "timeUnit": "Day",
+            "maxDismissals": 3
+        },
+        "isTopLevel": false,
+        "isModule": false,
+        "editorType": "visualDesignStudio"
+    },

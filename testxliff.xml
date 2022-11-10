@@ -1,0 +1,795 @@
+<?xml version="1.0"?>
+<xliff version="1.2"
+	xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="c-Wkme0j2Iyzr7DCkvj6dQBoL7s" datatype="pendoguide" source-language="en-US" target-language="de">
+		<body>
+			<group id="vHHYO4GJdPtuGuBypXg6aq2UnZE">
+				<note/>
+				<trans-unit id="u1LRyij2iA4yuZcZAZzl6EgAc8Q@c-Wkme0j2Iyzr7DCkvj6dQBoL7s|title">
+					<source>
+						<![CDATA[I Want To...]]>
+					</source>
+					<target>Ich möchte...</target>
+					<note>title</note>
+				</trans-unit>
+				<trans-unit id="u1LRyij2iA4yuZcZAZzl6EgAc8Q@c-Wkme0j2Iyzr7DCkvj6dQBoL7s|subtitle">
+					<source>
+						<![CDATA[Shortcuts to help you get things done]]>
+					</source>
+					<target>Shortcuts, die Ihnen helfen, Dinge zu erledigen</target>
+					<note>subtitle</note>
+				</trans-unit>
+				<trans-unit id="UUo48wG1N4PhN5Jtf3du-1zV8M8@c-Wkme0j2Iyzr7DCkvj6dQBoL7s|title">
+					<source>
+						<![CDATA[Get started with Beekeeper]]>
+					</source>
+					<target>Erste Schritte mit Beekeeper</target>
+					<note>title</note>
+				</trans-unit>
+				<trans-unit id="UUo48wG1N4PhN5Jtf3du-1zV8M8@c-Wkme0j2Iyzr7DCkvj6dQBoL7s|subtitle">
+					<source>
+						<![CDATA[Onboarding guides]]>
+					</source>
+					<target>Onboarding-Anleitungen</target>
+					<note>subtitle</note>
+				</trans-unit>
+				<trans-unit id="jj8iY0PDkK6b5eYc2G5KMkXL3jA@c-Wkme0j2Iyzr7DCkvj6dQBoL7s|title">
+					<source>
+						<![CDATA[Announcements]]>
+					</source>
+					<target>Ankündigungen</target>
+					<note>title</note>
+				</trans-unit>
+				<trans-unit id="jj8iY0PDkK6b5eYc2G5KMkXL3jA@c-Wkme0j2Iyzr7DCkvj6dQBoL7s|subtitle">
+					<source>
+						<![CDATA[What's New]]>
+					</source>
+					<target>Was ist Neu</target>
+					<note>subtitle</note>
+				</trans-unit>
+				<trans-unit id="1opW5QPs-wJjZZKiqVT9S1Z3ExQ@c-Wkme0j2Iyzr7DCkvj6dQBoL7s|title">
+					<source>
+						<![CDATA[Help Center]]>
+					</source>
+					<target>Hilfe-Center</target>
+					<note>title</note>
+				</trans-unit>
+				<trans-unit id="1opW5QPs-wJjZZKiqVT9S1Z3ExQ@c-Wkme0j2Iyzr7DCkvj6dQBoL7s|subtitle">
+					<source>
+						<![CDATA[Find answers to your questions]]>
+					</source>
+					<target>Finden Sie Antworten auf Ihre Fragen</target>
+					<note>subtitle</note>
+				</trans-unit>
+				<trans-unit id="HgbEgOph8jkR9CRCbzKuO-C6qRE@c-Wkme0j2Iyzr7DCkvj6dQBoL7s|title">
+					<source>
+						<![CDATA[Admin Help Center]]>
+					</source>
+					<target>Hilfe-Center für Administratoren</target>
+					<note>title</note>
+				</trans-unit>
+				<trans-unit id="HgbEgOph8jkR9CRCbzKuO-C6qRE@c-Wkme0j2Iyzr7DCkvj6dQBoL7s|subtitle">
+					<source>
+						<![CDATA[Find help articles and guides ]]>
+					</source>
+					<target>Finden Sie Hilfeartikel und Anleitungen </target>
+					<note>subtitle</note>
+				</trans-unit>
+				<trans-unit id="8z0LfE3xwu2lNr46IZhTSLUIw6Y@c-Wkme0j2Iyzr7DCkvj6dQBoL7s|title">
+					<source>
+						<![CDATA[Contact Beekeeper Support]]>
+					</source>
+					<target>Kontakt zum Beekeeper Support</target>
+					<note>title</note>
+				</trans-unit>
+				<trans-unit id="8z0LfE3xwu2lNr46IZhTSLUIw6Y@c-Wkme0j2Iyzr7DCkvj6dQBoL7s|subtitle">
+					<source>
+						<![CDATA[Create a support ticket with Beekeeper]]>
+					</source>
+					<target>Erstellen Sie ein Support-Ticket bei Beekeeper</target>
+					<note>subtitle</note>
+				</trans-unit>
+				<trans-unit id="Rec1bd4e1_fHEmjoxwcacxi_WVk@c-Wkme0j2Iyzr7DCkvj6dQBoL7s|title">
+					<source>
+						<![CDATA[Share Beekeeper, Earn Rewards]]>
+					</source>
+					<target>App teilen, Prämien verdienen</target>
+					<note>title</note>
+				</trans-unit>
+				<trans-unit id="Rec1bd4e1_fHEmjoxwcacxi_WVk@c-Wkme0j2Iyzr7DCkvj6dQBoL7s|subtitle">
+					<source>
+						<![CDATA[Share us with your network to earn rewards]]>
+					</source>
+					<target>Teilen Sie uns mit Ihrem Netzwerk, um Prämien zu verdienen</target>
+					<note>subtitle</note>
+				</trans-unit>
+				<trans-unit id="5c680669-4d61-4aa7-8697-ee80fab1f120|ariaLabel">
+					<source>
+						<![CDATA[Resource Center]]>
+					</source>
+					<target>Resource Center</target>
+					<note>Base</note>
+				</trans-unit>
+				<trans-unit id="13a24489-8a4e-4fad-ba4d-c949f42a37fc">
+					<source>
+						<![CDATA[Resource Center]]>
+					</source>
+					<target>Resource Center</target>
+					<note>H2Block</note>
+				</trans-unit>
+				<trans-unit id="5acc1d25-4a46-4fbd-ae79-a7d3f81ad13f|ariaLabel">
+					<source>
+						<![CDATA[Close]]>
+					</source>
+					<target>Schließen</target>
+					<note>CloseButton</note>
+				</trans-unit>
+				<trans-unit id="bf114352-50f5-4450-900a-d428565defed">
+					<source>
+						<![CDATA[<ph equiv-text="title"/>]]>
+					</source>
+					<target>&lt;ph equiv-text=“title”/&gt;</target>
+					<note>TextView</note>
+				</trans-unit>
+				<trans-unit id="8eea7929-1141-4adb-b802-9e11eb13351f">
+					<source>
+						<![CDATA[<ph equiv-text="subtitle"/>]]>
+					</source>
+					<target>&lt;ph equiv-text=“subtitle”/&gt;</target>
+					<note>TextView</note>
+				</trans-unit>
+				<trans-unit id="2f122469-7060-4eb9-a699-0b14de1fc23b">
+					<source>
+						<![CDATA[No content available at this time.]]>
+					</source>
+					<target>No content available at this time.</target>
+					<note>TextView</note>
+				</trans-unit>
+				<trans-unit id="900e486e-77b7-417c-823a-5d62c9fca68e">
+					<source>
+						<![CDATA[Feel free to check back later or navigate to another page to view content]]>
+					</source>
+					<target>Feel free to check back later or navigate to another page to view content</target>
+					<note>TextView</note>
+				</trans-unit>
+			</group>
+		</body>
+	</file>
+	<file original="u1LRyij2iA4yuZcZAZzl6EgAc8Q@c-Wkme0j2Iyzr7DCkvj6dQBoL7s" datatype="pendoguide" source-language="en-US" target-language="de">
+		<body>
+			<group id="9EgVDveuNkSTVJapqhwa0c4mm5Q">
+				<note/>
+				<trans-unit id="8Gi4QhmCPLP6JwYRPLjuagVsfYA|title">
+					<source>
+						<![CDATA[Invite a Teammate]]>
+					</source>
+					<target>Lade neue Nutzer ein</target>
+					<note>title</note>
+				</trans-unit>
+				<trans-unit id="8Gi4QhmCPLP6JwYRPLjuagVsfYA|keyword">
+					<source>
+						<![CDATA[invite]]>
+					</source>
+					<target>Invite</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="8Gi4QhmCPLP6JwYRPLjuagVsfYA|keyword">
+					<source>
+						<![CDATA[team]]>
+					</source>
+					<target>Team</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="8Gi4QhmCPLP6JwYRPLjuagVsfYA|keyword">
+					<source>
+						<![CDATA[new]]>
+					</source>
+					<target>New</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="8Gi4QhmCPLP6JwYRPLjuagVsfYA|keyword">
+					<source>
+						<![CDATA[user]]>
+					</source>
+					<target>User</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="8Gi4QhmCPLP6JwYRPLjuagVsfYA|keyword">
+					<source>
+						<![CDATA[teammate]]>
+					</source>
+					<target>Teammate</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="8Gi4QhmCPLP6JwYRPLjuagVsfYA|keyword">
+					<source>
+						<![CDATA[add]]>
+					</source>
+					<target>Add</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="mdE1d6OH5VTqdhnPSLrKEinLewY|title">
+					<source>
+						<![CDATA[Setup an Employee Referral Program]]>
+					</source>
+					<target>Setup an Employee Referral Program</target>
+					<note>title</note>
+				</trans-unit>
+				<trans-unit id="J_Dy5T4IBmVRUoCfviND1-_5kvc|title">
+					<source>
+						<![CDATA[Create a Group Chat]]>
+					</source>
+					<target>Create a Group Chat</target>
+					<note>title</note>
+				</trans-unit>
+				<trans-unit id="pLgsaDTMJmg7cMtFYor3L6x9n_g|title">
+					<source>
+						<![CDATA[Add a new Shortcut]]>
+					</source>
+					<target>Erstelle einen neuen Stream</target>
+					<note>title</note>
+				</trans-unit>
+				<trans-unit id="pLgsaDTMJmg7cMtFYor3L6x9n_g|keyword">
+					<source>
+						<![CDATA[shortcut]]>
+					</source>
+					<target>Shortcuts</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="pLgsaDTMJmg7cMtFYor3L6x9n_g|keyword">
+					<source>
+						<![CDATA[toolbox]]>
+					</source>
+					<target>toolbox</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="pLgsaDTMJmg7cMtFYor3L6x9n_g|keyword">
+					<source>
+						<![CDATA[shortcuts]]>
+					</source>
+					<target>shortcuts</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="pLgsaDTMJmg7cMtFYor3L6x9n_g|keyword">
+					<source>
+						<![CDATA[extensions]]>
+					</source>
+					<target>extensions</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="pLgsaDTMJmg7cMtFYor3L6x9n_g|keyword">
+					<source>
+						<![CDATA[integrations]]>
+					</source>
+					<target>integrations</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="h4Y1-ixWxO4HzyrVCxCc0e1xU4U|title">
+					<source>
+						<![CDATA[Create a new Form]]>
+					</source>
+					<target>Erstelle ein Formular</target>
+					<note>title</note>
+				</trans-unit>
+				<trans-unit id="h4Y1-ixWxO4HzyrVCxCc0e1xU4U|keyword">
+					<source>
+						<![CDATA[form]]>
+					</source>
+					<target>form</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="h4Y1-ixWxO4HzyrVCxCc0e1xU4U|keyword">
+					<source>
+						<![CDATA[forms]]>
+					</source>
+					<target>forms</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="h4Y1-ixWxO4HzyrVCxCc0e1xU4U|keyword">
+					<source>
+						<![CDATA[survey]]>
+					</source>
+					<target>survey</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="zo3ehTI1uUFcP0ekiLdH9gxvOww|title">
+					<source>
+						<![CDATA[Upload a Document]]>
+					</source>
+					<target>Lade ein Dokument hoch</target>
+					<note>title</note>
+				</trans-unit>
+				<trans-unit id="zo3ehTI1uUFcP0ekiLdH9gxvOww|keyword">
+					<source>
+						<![CDATA[documents]]>
+					</source>
+					<target>documents</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="zo3ehTI1uUFcP0ekiLdH9gxvOww|keyword">
+					<source>
+						<![CDATA[document]]>
+					</source>
+					<target>document</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="zo3ehTI1uUFcP0ekiLdH9gxvOww|keyword">
+					<source>
+						<![CDATA[sharing]]>
+					</source>
+					<target>sharing</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="zo3ehTI1uUFcP0ekiLdH9gxvOww|keyword">
+					<source>
+						<![CDATA[files]]>
+					</source>
+					<target>files</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="zo3ehTI1uUFcP0ekiLdH9gxvOww|keyword">
+					<source>
+						<![CDATA[drive]]>
+					</source>
+					<target>drive</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="zo3ehTI1uUFcP0ekiLdH9gxvOww|keyword">
+					<source>
+						<![CDATA[store]]>
+					</source>
+					<target>store</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="KxDpuZQgCdIFGNGqEDM6eTaUe-0|title">
+					<source>
+						<![CDATA[Create a new Stream]]>
+					</source>
+					<target>Erstelle einen neuen Stream</target>
+					<note>title</note>
+				</trans-unit>
+				<trans-unit id="KxDpuZQgCdIFGNGqEDM6eTaUe-0|keyword">
+					<source>
+						<![CDATA[stream]]>
+					</source>
+					<target>stream</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="KxDpuZQgCdIFGNGqEDM6eTaUe-0|keyword">
+					<source>
+						<![CDATA[streams]]>
+					</source>
+					<target>streams</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="KxDpuZQgCdIFGNGqEDM6eTaUe-0|keyword">
+					<source>
+						<![CDATA[newsfeed]]>
+					</source>
+					<target>newsfeed</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="KxDpuZQgCdIFGNGqEDM6eTaUe-0|keyword">
+					<source>
+						<![CDATA[engage]]>
+					</source>
+					<target>engage</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="z0YdH_HCd0DM-DA-kteCVCz_bUk|title">
+					<source>
+						<![CDATA[Invite a Teammate]]>
+					</source>
+					<target>Lade neue Nutzer ein</target>
+					<note>title</note>
+				</trans-unit>
+				<trans-unit id="z0YdH_HCd0DM-DA-kteCVCz_bUk|keyword">
+					<source>
+						<![CDATA[invite]]>
+					</source>
+					<target>Invite</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="z0YdH_HCd0DM-DA-kteCVCz_bUk|keyword">
+					<source>
+						<![CDATA[friend]]>
+					</source>
+					<target>friend</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="z0YdH_HCd0DM-DA-kteCVCz_bUk|keyword">
+					<source>
+						<![CDATA[colleague]]>
+					</source>
+					<target>colleague</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="z0YdH_HCd0DM-DA-kteCVCz_bUk|keyword">
+					<source>
+						<![CDATA[new]]>
+					</source>
+					<target>nue</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="z0YdH_HCd0DM-DA-kteCVCz_bUk|keyword">
+					<source>
+						<![CDATA[user]]>
+					</source>
+					<target>User</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="z0YdH_HCd0DM-DA-kteCVCz_bUk|keyword">
+					<source>
+						<![CDATA[add]]>
+					</source>
+					<target>Add</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="z2qtt5n5Sb6BuF01SWvelHa2400|title">
+					<source>
+						<![CDATA[Send a Survey]]>
+					</source>
+					<target>Send a Survey</target>
+					<note>title</note>
+				</trans-unit>
+				<trans-unit id="z2qtt5n5Sb6BuF01SWvelHa2400|keyword">
+					<source>
+						<![CDATA[survey]]>
+					</source>
+					<target>survey</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="z2qtt5n5Sb6BuF01SWvelHa2400|keyword">
+					<source>
+						<![CDATA[engagement]]>
+					</source>
+					<target>engagement</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="z2qtt5n5Sb6BuF01SWvelHa2400|keyword">
+					<source>
+						<![CDATA[collect]]>
+					</source>
+					<target>collect</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="z2qtt5n5Sb6BuF01SWvelHa2400|keyword">
+					<source>
+						<![CDATA[engage]]>
+					</source>
+					<target>engage</target>
+					<note>keywords</note>
+				</trans-unit>
+				<trans-unit id="94bc0ea0-fde9-4d5b-bdda-4b3bbdb676b6|ariaLabel">
+					<source>
+						<![CDATA[Back to Resource Center Home]]>
+					</source>
+					<target>Back to Resource Center Home</target>
+					<note>Caret</note>
+				</trans-unit>
+				<trans-unit id="13a24489-8a4e-4fad-ba4d-c949f42a37fc">
+					<source>
+						<![CDATA[I Want To...]]>
+					</source>
+					<target>Ich möchte...</target>
+					<note>H2Block</note>
+				</trans-unit>
+				<trans-unit id="5f9a50b3-d738-4d1f-bf2d-3605e87ec745|ariaLabel">
+					<source>
+						<![CDATA[Close]]>
+					</source>
+					<target>Schließen</target>
+					<note>CloseButton</note>
+				</trans-unit>
+				<trans-unit id="5f73947a-5d5f-4574-81a2-fe98db6d859c">
+					<source>
+						<![CDATA[Search]]>
+					</source>
+					<target>Suche</target>
+					<note>TextInputBlock</note>
+				</trans-unit>
+				<trans-unit id="d97c23c5-0b40-4d9e-8ee2-20831c38b1c1">
+					<source>
+						<![CDATA[No results found. ]]>
+					</source>
+					<target>No results found.</target>
+					<note>TextView</note>
+				</trans-unit>
+				<trans-unit id="c1a5dd3e-1a3b-4f3d-acd6-6849207b0d09">
+					<source>
+						<![CDATA[Try searching a different keyword or check the spelling of your current entry.]]>
+					</source>
+					<target>Try searching a different keyword or check the spelling of your current entry.</target>
+					<note>TextView</note>
+				</trans-unit>
+				<trans-unit id="a4a720ee-1f24-42c8-8134-1cbac00a8149">
+					<source>
+						<![CDATA[<ph equiv-text="title"/>]]>
+					</source>
+					<target>&lt;ph equiv-text=“title”/&gt;</target>
+					<note>TextView</note>
+				</trans-unit>
+			</group>
+		</body>
+	</file>
+	<file original="UUo48wG1N4PhN5Jtf3du-1zV8M8@c-Wkme0j2Iyzr7DCkvj6dQBoL7s" datatype="pendoguide" source-language="en-US" target-language="de">
+		<body>
+			<group id="gDe0Mg80W0Aiyvr1OVOXodZ6PUo">
+				<note/>
+				<trans-unit id="a7DS0nkG9a1bp0QC3AkMfHFCLsw|title">
+					<source>
+						<![CDATA[Get to Know the Core Product]]>
+					</source>
+					<target>Get to Know the Core Product</target>
+					<note>title</note>
+				</trans-unit>
+				<trans-unit id="a7DS0nkG9a1bp0QC3AkMfHFCLsw|subtitle">
+					<source>
+						<![CDATA[Step <%=currentStep%> of <%=totalSteps%>]]>
+					</source>
+					<target>Step &lt;%=currentStep%&gt; of &lt;%=totalSteps%&gt;</target>
+					<note>subtitle</note>
+				</trans-unit>
+				<trans-unit id="lPAI2LDC3Zb0cDnDt2R1afltFdA|title">
+					<source>
+						<![CDATA[Invite your teammates]]>
+					</source>
+					<target>Lade neue Nutzer ein</target>
+					<note>title</note>
+				</trans-unit>
+				<trans-unit id="lPAI2LDC3Zb0cDnDt2R1afltFdA|subtitle">
+					<source>
+						<![CDATA[Step <%=currentStep%> of <%=totalSteps%>]]>
+					</source>
+					<target>Step &lt;%=currentStep%&gt; of &lt;%=totalSteps%&gt;</target>
+					<note>subtitle</note>
+				</trans-unit>
+				<trans-unit id="P-7iT3jug7-iLurDfxwoMOTV5qg|title">
+					<source>
+						<![CDATA[Create a Stream]]>
+					</source>
+					<target>Erstelle einen neuen Stream</target>
+					<note>title</note>
+				</trans-unit>
+				<trans-unit id="P-7iT3jug7-iLurDfxwoMOTV5qg|subtitle">
+					<source>
+						<![CDATA[Step <%=currentStep%> of <%=totalSteps%>]]>
+					</source>
+					<target>Step &lt;%=currentStep%&gt; of &lt;%=totalSteps%&gt;</target>
+					<note>subtitle</note>
+				</trans-unit>
+				<trans-unit id="TXgMzai4TzsantysDxXigB_aaJk|title">
+					<source>
+						<![CDATA[Send a Survey]]>
+					</source>
+					<target>Send a Survey</target>
+					<note>title</note>
+				</trans-unit>
+				<trans-unit id="TXgMzai4TzsantysDxXigB_aaJk|subtitle">
+					<source>
+						<![CDATA[Step <%=currentStep%> of <%=totalSteps%>]]>
+					</source>
+					<target>Step &lt;%=currentStep%&gt; of &lt;%=totalSteps%&gt;</target>
+					<note>subtitle</note>
+				</trans-unit>
+				<trans-unit id="NDrS_Qg0V61s0TlFjfXL1BzAD3M|title">
+					<source>
+						<![CDATA[Upload a Document]]>
+					</source>
+					<target>Lade ein Dokument hoch</target>
+					<note>title</note>
+				</trans-unit>
+				<trans-unit id="NDrS_Qg0V61s0TlFjfXL1BzAD3M|subtitle">
+					<source>
+						<![CDATA[Step <%=currentStep%> of <%=totalSteps%>]]>
+					</source>
+					<target>Step &lt;%=currentStep%&gt; of &lt;%=totalSteps%&gt;</target>
+					<note>subtitle</note>
+				</trans-unit>
+				<trans-unit id="5i2Q11Xvn2gDR-1u8BW0-dNXShM|title">
+					<source>
+						<![CDATA[Send a Campaign]]>
+					</source>
+					<target>Send a Campaign</target>
+					<note>title</note>
+				</trans-unit>
+				<trans-unit id="5i2Q11Xvn2gDR-1u8BW0-dNXShM|subtitle">
+					<source>
+						<![CDATA[Step <%=currentStep%> of <%=totalSteps%>]]>
+					</source>
+					<target>Step &lt;%=currentStep%&gt; of &lt;%=totalSteps%&gt;</target>
+					<note>subtitle</note>
+				</trans-unit>
+				<trans-unit id="V3Od7vpl_5PJmqtq9iJrk5Z3bOc|title">
+					<source>
+						<![CDATA[Download the Mobile App]]>
+					</source>
+					<target>Laden Sie die App herunter</target>
+					<note>title</note>
+				</trans-unit>
+				<trans-unit id="V3Od7vpl_5PJmqtq9iJrk5Z3bOc|subtitle">
+					<source>
+						<![CDATA[Step <%=currentStep%> of <%=totalSteps%>]]>
+					</source>
+					<target>Step &lt;%=currentStep%&gt; of &lt;%=totalSteps%&gt;</target>
+					<note>subtitle</note>
+				</trans-unit>
+				<trans-unit id="d751dfeb-bd4a-4672-ba95-3beed22fe8ec|ariaLabel">
+					<source>
+						<![CDATA[Back to Resource Center Home]]>
+					</source>
+					<target>Back to Resource Center Home</target>
+					<note>Caret</note>
+				</trans-unit>
+				<trans-unit id="fff2a315-0294-45d7-84fe-8349f9b90f1e">
+					<source>
+						<![CDATA[Get started with Beekeeper]]>
+					</source>
+					<target>Get started with Beekeeper</target>
+					<note>H2Block</note>
+				</trans-unit>
+				<trans-unit id="1d176c82-a703-4300-bb5d-0d27a9be4878|ariaLabel">
+					<source>
+						<![CDATA[Close]]>
+					</source>
+					<target>Schließen</target>
+					<note>CloseButton</note>
+				</trans-unit>
+				<trans-unit id="37105e04-8c72-484d-82fc-3b3b547efbe4">
+					<source>
+						<![CDATA[<ph equiv-text="title"/>]]>
+					</source>
+					<target>&lt;ph equiv-text=“title”/&gt;</target>
+					<note>TextView</note>
+				</trans-unit>
+				<trans-unit id="c69c721f-cba4-4cb1-bc65-110fd7d4e175">
+					<source>
+						<![CDATA[<ph equiv-text="totalPercentComplete"/>]]>
+					</source>
+					<target>&lt;ph equiv-text=“totalPercentComplete”/&gt;</target>
+					<note>TextView</note>
+				</trans-unit>
+			</group>
+		</body>
+	</file>
+	<file original="jj8iY0PDkK6b5eYc2G5KMkXL3jA@c-Wkme0j2Iyzr7DCkvj6dQBoL7s" datatype="pendoguide" source-language="en-US" target-language="de">
+		<body>
+			<group id="0Yof5HUqvcHxmqDn3FFbm-v5Ci0">
+				<note/>
+				<trans-unit id="7dcef216-9f2c-43e5-bce0-b361ee6250d0|ariaLabel">
+					<source>
+						<![CDATA[Back to Resource Center Home]]>
+					</source>
+					<target>Back to Resource Center Home</target>
+					<note>Caret</note>
+				</trans-unit>
+				<trans-unit id="13a24489-8a4e-4fad-ba4d-c949f42a37fc">
+					<source>
+						<![CDATA[Announcements]]>
+					</source>
+					<target>Ankündigungen</target>
+					<note>H2Block</note>
+				</trans-unit>
+				<trans-unit id="071f0524-aa6d-4b72-99e3-7d9d4a370cb0|ariaLabel">
+					<source>
+						<![CDATA[Close]]>
+					</source>
+					<target>Schließen</target>
+					<note>CloseButton</note>
+				</trans-unit>
+			</group>
+		</body>
+	</file>
+	<file original="1opW5QPs-wJjZZKiqVT9S1Z3ExQ@c-Wkme0j2Iyzr7DCkvj6dQBoL7s" datatype="pendoguide" source-language="en-US" target-language="de">
+		<body>
+			<group id="g3-VnwPliqFwqqDUlwKkduvQ4Rc">
+				<note/>
+				<trans-unit id="27501788-e807-4415-9d0d-26fea4b97155|ariaLabel">
+					<source>
+						<![CDATA[Back to Resource Center Home]]>
+					</source>
+					<target>Back to Resource Center Home</target>
+					<note>Caret</note>
+				</trans-unit>
+				<trans-unit id="03dc7e39-f10b-400f-9280-8cacafbde297">
+					<source>
+						<![CDATA[Help Center]]>
+					</source>
+					<target>Hilfe-Center</target>
+					<note>H2Block</note>
+				</trans-unit>
+				<trans-unit id="f7d87e2b-a162-4f79-9ca0-8e5a64640403|ariaLabel">
+					<source>
+						<![CDATA[Close]]>
+					</source>
+					<target>Schließen</target>
+					<note>CloseButton</note>
+				</trans-unit>
+			</group>
+		</body>
+	</file>
+	<file original="HgbEgOph8jkR9CRCbzKuO-C6qRE@c-Wkme0j2Iyzr7DCkvj6dQBoL7s" datatype="pendoguide" source-language="en-US" target-language="de">
+		<body>
+			<group id="RrTfJW1UhBlRI-OmLNvHpnOy0pU">
+				<note/>
+				<trans-unit id="38d34bb0-3fa1-4372-8d25-05273b8eb360|ariaLabel">
+					<source>
+						<![CDATA[Back to Resource Center Home]]>
+					</source>
+					<target>Back to Resource Center Home</target>
+					<note>Caret</note>
+				</trans-unit>
+				<trans-unit id="87be1618-0c79-4da9-969b-c812fa0342fe">
+					<source>
+						<![CDATA[Admin Help Center]]>
+					</source>
+					<target>Hilfe-Center für Administratoren</target>
+					<note>H2Block</note>
+				</trans-unit>
+				<trans-unit id="4392c4bf-9494-42fd-912f-49fc498f4101|ariaLabel">
+					<source>
+						<![CDATA[Close]]>
+					</source>
+					<target>Schließen</target>
+					<note>CloseButton</note>
+				</trans-unit>
+			</group>
+		</body>
+	</file>
+	<file original="8z0LfE3xwu2lNr46IZhTSLUIw6Y@c-Wkme0j2Iyzr7DCkvj6dQBoL7s" datatype="pendoguide" source-language="en-US" target-language="de">
+		<body>
+			<group id="upXsVN4URy5z8rTfpJ7GBz6UBzQ">
+				<note/>
+				<trans-unit id="d4ca890c-ad17-469e-aeb4-b1e10560e2ef|ariaLabel">
+					<source>
+						<![CDATA[Back to Resource Center Home]]>
+					</source>
+					<target>Back to Resource Center Home</target>
+					<note>Caret</note>
+				</trans-unit>
+				<trans-unit id="13a24489-8a4e-4fad-ba4d-c949f42a37fc">
+					<source>
+						<![CDATA[Contact Beekeeper Support]]>
+					</source>
+					<target>Kontakt zum Beekeeper Support</target>
+					<note>H2Block</note>
+				</trans-unit>
+				<trans-unit id="d1918b11-5b21-46c9-9ae3-0eefc91d3b5d|ariaLabel">
+					<source>
+						<![CDATA[Close]]>
+					</source>
+					<target>Schließen</target>
+					<note>CloseButton</note>
+				</trans-unit>
+			</group>
+		</body>
+	</file>
+	<file original="Rec1bd4e1_fHEmjoxwcacxi_WVk@c-Wkme0j2Iyzr7DCkvj6dQBoL7s" datatype="pendoguide" source-language="en-US" target-language="de">
+		<body>
+			<group id="Z91-yzveKEGxcEyM7pwp0aND8BA">
+				<note/>
+				<trans-unit id="18e18a16-c980-4cc6-8b74-83794c440afb|ariaLabel">
+					<source>
+						<![CDATA[Back to Resource Center Home]]>
+					</source>
+					<target>Back to Resource Center Home</target>
+					<note>Caret</note>
+				</trans-unit>
+				<trans-unit id="13a24489-8a4e-4fad-ba4d-c949f42a37fc">
+					<source>
+						<![CDATA[Share Beekeeper, Earn Rewards]]>
+					</source>
+					<target>App teilen, Prämien verdienen</target>
+					<note>H2Block</note>
+				</trans-unit>
+				<trans-unit id="503429a4-31d3-4ef2-951c-964daa415748|ariaLabel">
+					<source>
+						<![CDATA[Close]]>
+					</source>
+					<target>Schließen</target>
+					<note>CloseButton</note>
+				</trans-unit>
+			</group>
+		</body>
+	</file>
+</xliff>
