@@ -34,12 +34,14 @@
           pendo.initialize({
             // disableCookies: true, 
             // disablePersistence: true, 
+            // disableGuides: true,
 
               visitor: {
                   id:              'visitor6000',   // plz change back to visitor6000 after testing
                   email:           'visitor6000@email.com',    // Recommended if using Pendo Feedback, or NPS Email
                   full_name:       'Test',
-                  xtra_data:       'something here for payload'
+                  xtra_data:       'something here for payload',
+                  // testforisempty:  'hi'
                   // role:         // Optional
   
                   // You can add any additional visitor level key-values here,
@@ -48,7 +50,8 @@
   
               account: {
                   id:             "account",
-                  wow:            ['wow', 'wow2', 'WOW3']
+                  wow:            ['wow', 'wow2', 'WOW3'],
+                  testforcode:    "accountName"
                   // hostname:     'HOSTNAME',
                   // business_name: 'testbusiness'
                   // name:         // Optional
@@ -70,7 +73,17 @@
 
   
   </script>
+<script>
+  window.intercomSettings = {
+    api_base: "https://api-iam.intercom.io",
+    app_id: "cgen6vra"
+  };
+</script>
 
+<script>
+// We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/cgen6vra'
+(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/cgen6vra';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+</script>
 </head>
 
 <body id="page-top">
@@ -215,6 +228,14 @@
         <a class="nav-link" href="/iframepage.html">
           <i class="fas fa-fw fa-table"></i>
           <span>Iframed page TEST</span></a>
+
+      </li>
+
+      <!-- Nav Item - Iframe same api key test -->
+      <li class="nav-item">
+        <a class="nav-link" href="/iframepage2.html">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Iframed page TEST - SAME API KEY</span></a>
 
       </li>
 
@@ -450,6 +471,7 @@
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800" id="oe-campaign-settings-account-info-2000">Dashboard</h1>
             <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" id="feedback-btn-1" data-id="1.0-Nav-Home.Dashboard"><i class="fas fa-download fa-sm text-white-50"></i> Leave Feedback</a>
+            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm disabled" id="feedback-btn-3" data-id="1.0-Nav-Home.Dashboard"><i class="fas fa-download fa-sm text-white-50"></i> Test Disabled Button</a>
             <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-secondary shadow-sm" id="feedback-btn-2" data-id="1.0-Nav-Home.Dashboard"><i class="fas fa-download fa-sm text-white-50"></i> Test Button to Remove</a>
           </div>
 
@@ -814,9 +836,9 @@
 
  
 
-<!-- Start of zestytestyhelp Zendesk Widget script -->
-<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=a088bb2f-b061-4d86-841e-d9f1d1292889"> </script>
-<!-- End of zestytestyhelp Zendesk Widget script -->
+<!-- Start of pendo1311 Zendesk Widget script -->
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=a4fa1f13-8076-4948-ab4f-e4e887adbf3a"> </script>
+<!-- End of pendo1311 Zendesk Widget script -->
 
 
 
