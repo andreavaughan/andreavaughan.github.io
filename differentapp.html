@@ -31,38 +31,58 @@
           // Call this whenever information about your visitors becomes available
           // Please use Strings, Numbers, or Bools for value types.
 
-          // pendo.initialize({
-          //     visitor: {
-          //         id:              'visitor6000',   // plz change back to visitor6000 after testing
-          //         email:           'visitor6000@email.com',    // Recommended if using Pendo Feedback, or NPS Email
-          //         // full_name:       'Test',
-          //         // xtra_data:       'something here for payload'
-          //         // role:         // Optional
+
+          pendo.initialize({
+              visitor: {
+                  id:              'visitorIFRAME6000',   // plz change back to visitor6000 after testing
+                  email:           'visitor6000@email.com',    // Recommended if using Pendo Feedback, or NPS Email
+                  // full_name:       'Test',
+                  // xtra_data:       'something here for payload'
+                  // role:         // Optional
   
-          //         // You can add any additional visitor level key-values here,
-          //         // as long as it's not one of the above reserved names.
-          //     },
+                  // You can add any additional visitor level key-values here,
+                  // as long as it's not one of the above reserved names.
+              },
   
-          //     account: {
-          //         id:             "account",
-          //         // hostname:     'HOSTNAME',
-          //         // business_name: 'testbusiness'
-          //         // name:         // Optional
-          //         // is_paying:    // Recommended if using Pendo Feedback
-          //         // monthly_value:// Recommended if using Pendo Feedback
-          //         // planLevel:    // Optional
-          //         // planPrice:    // Optional
-          //         // creationDate: // Optional
+              account: {
+                  id:             "account",
+                  // hostname:     'HOSTNAME',
+                  // business_name: 'testbusiness'
+                  // name:         // Optional
+                  // is_paying:    // Recommended if using Pendo Feedback
+                  // monthly_value:// Recommended if using Pendo Feedback
+                  // planLevel:    // Optional
+                  // planPrice:    // Optional
+                  // creationDate: // Optional
   
-          //         // You can add any additional account level key-values here,
-          //         // as long as it's not one of the above reserved names.
-          //     }
-          // });
+                  // You can add any additional account level key-values here,
+                  // as long as it's not one of the above reserved names.
+              }
+          });
+
+          excludeAllText: true;
+
   })('a5aa42f4-df0b-4d31-6659-8cfb888bad77');
 
 
   
   </script>
+  <script src="js/jwtinitialize.js"></script>
+
+
+  <!-- <script>
+    function goGetThePendoAgent(apiKey){ 
+    (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
+
+v=['initialize','identify','updateOptions','pageLoad','track'];for(w=0,x=v.length;w<x;++w)(function(m){ 
+
+o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]); 
+
+y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+apiKey+'/pendo.js'; 
+
+z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo'); 
+}
+  </script> -->
 
 </head>
 
@@ -672,63 +692,11 @@
   <script src="./js/track-events.js" defer></script>
 
  
-<!-- Start of goose-test Zendesk Widget script --><script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=a97962cd-1ac1-4e2c-b0ae-6c4e269709c3"> </script><!-- End of goose-test Zendesk Widget script -->
 
 
- <!-- <script> 
-    // WORKING SEGMENT SCRIPT
-        !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
-        analytics.load("VXrEPSlhnbVxODjBTfrk0sbdU29jLcNd");
-        analytics.page();
-        
-        }}();
-  
-      analytics.identify("userId1", {
-        name: "Peter Gibbons", 
-        email: "peter@initech.com", 
-        group: "stoffer"
-      });
-      
-      analytics.group("0e8c78ea9d97a7b8185e8632", {
-        name: "Initech", 
-        industry: "Technology",
-        employees: 329, 
-        plan: "enterprise"
-      }); 
-  </script> -->
-
-  <!-- <script type="text/javascript">
-    !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var o=document.getElementsByTagName("script")[0];o.parentNode.insertBefore(n,o);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
-    analytics.load("VXrEPSlhnbVxODjBTfrk0sbdU29jLcNd");
-    analytics.page();
-    }}();
-    
-    analytics.identify('newwwwwwwwwwww', {
-        groupId: 'groupsentwithidentify',
-       name: 'Michael Bolton',
-      email: 'mbolton@initech.com'
-    });
-    
-    analytics.group('SegmentAccount1', {
-      principles: ['Eckert', 'Mauchly'],
-      site: 'Eckert–Mauchly Computer Corporation',
-      statedGoals: 'Develop the first commercial computer',
-      industry: 'Technology'
-    });
-    
-    </script> -->
-
-    <!-- <script> 
-    // Claire's - THIS IS A WORKING SEGMENT SETUP DON'T DELETE THIS 
-        !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
-        analytics.load("VXrEPSlhnbVxODjBTfrk0sbdU29jLcNd");
-        analytics.page();
-        analytics.identify('visitorTest', { user_id: 'testUser'})
-        analytics.group('testing')
-        
-              }}();
-  </script> -->
-
+<!-- Start of goose-testhelp Zendesk Widget script -->
+<!-- <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=19285eb3-ab08-473a-a43c-33b949dc105b" defer> </script> -->
+<!-- End of goose-testhelp Zendesk Widget script -->
 </body>
 
 </html>

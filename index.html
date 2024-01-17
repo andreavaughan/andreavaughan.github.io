@@ -19,18 +19,18 @@
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
 <!-- Pendo Scripts -->
-<script>
 
-    (function(apiKey){
+  <!-- <script src="./js/initializetest.js" async></script> -->
+<script>
+   
+
+   (function(apiKey){
       (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
       v=['initialize','identify','updateOptions','pageLoad','track'];for(w=0,x=v.length;w<x;++w)(function(m){
           o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
           y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+apiKey+'/pendo.js';
           z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
   
-          // Call this whenever information about your visitors becomes available
-          // Please use Strings, Numbers, or Bools for value types.
-
           pendo.initialize({
             // disableCookies: true, 
             // disablePersistence: true, 
@@ -41,38 +41,29 @@
                   email:           'visitor6000@email.com',    // Recommended if using Pendo Feedback, or NPS Email
                   full_name:       'Test',
                   xtra_data:       'something here for payload',
-                  // testforisempty:  'hi'
-                  // role:         // Optional
-  
-                  // You can add any additional visitor level key-values here,
-                  // as long as it's not one of the above reserved names.
+                  ins_current_permissions: true,
+                  // testforisempty:  'hi,',
               },
+
   
               account: {
                   id:             "account",
                   wow:            ['wow', 'wow2', 'WOW3'],
-                  testforcode:    "accountName"
+                  testforcode:    "accountName", 
+                  planType:       "testhere"
                   // hostname:     'HOSTNAME',
                   // business_name: 'testbusiness'
-                  // name:         // Optional
-                  // is_paying:    // Recommended if using Pendo Feedback
-                  // monthly_value:// Recommended if using Pendo Feedback
-                  // planLevel:    // Optional
-                  // planPrice:    // Optional
-                  // creationDate: // Optional
-  
-                  // You can add any additional account level key-values here,
-                  // as long as it's not one of the above reserved names.
               },
-              
 
-               
+              disableGuides: false,
+              excludeAllText: false, 
           });
+ 
   })('e013cfb9-d43a-4469-7bae-4916e01ed7b4');
 
 
-  
-  </script>
+
+</script>
 <script>
   window.intercomSettings = {
     api_base: "https://api-iam.intercom.io",
@@ -84,6 +75,14 @@
 // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/cgen6vra'
 (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/cgen6vra';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
 </script>
+
+<!-- search only version -->
+<script
+  src="https://cdn.jsdelivr.net/npm/algoliasearch@4.17.0/dist/algoliasearch-lite.umd.js"
+  integrity="sha256-Lf9DrpGmcRip6OQzbcL6lnvNmoZNSKpyQX5pMlwatWE="
+  crossorigin="anonymous"
+></script>
+
 </head>
 
 <body id="page-top">
@@ -316,6 +315,13 @@
             </li>
 
             <!-- Nav Item - Alerts -->
+            <div class="table-container sc-iAyFgw gPlgsX sc-dnqmqq gXuRiM" data-table-name="explorerUiAssets">
+              <div class="table-actions sc-htoDjs kxDkgK">
+                <button type="button" class="btn btn--tertiary" id="launch-rc" data-analytics-action="launch-rc">
+                  Launch RC
+                </button>
+              </div>
+              </div>
             <li class="nav-item dropdown no-arrow mx-1">
               <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-bell fa-fw"></i>
@@ -470,7 +476,13 @@
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800" id="oe-campaign-settings-account-info-2000">Dashboard</h1>
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" id="feedback-btn-1" data-id="1.0-Nav-Home.Dashboard"><i class="fas fa-download fa-sm text-white-50"></i> Leave Feedback</a>
+            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" id="feedback-btn-1" data-id="1.0-Nav-Home.Dashboard"><i class="fas fa-download fa-sm text-white-50"></i> 
+                <span class="button-child">
+                  <span class="button-child-child">
+                    Leave Feedback
+                  </span>
+                </span>
+            </a>
             <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm disabled" id="feedback-btn-3" data-id="1.0-Nav-Home.Dashboard"><i class="fas fa-download fa-sm text-white-50"></i> Test Disabled Button</a>
             <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-secondary shadow-sm" id="feedback-btn-2" data-id="1.0-Nav-Home.Dashboard"><i class="fas fa-download fa-sm text-white-50"></i> Test Button to Remove</a>
           </div>
@@ -595,7 +607,10 @@
               <div class="card shadow mb-4">
                 <!-- Card Header - Dropdown -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
+                  <div id="revenue-sources1">
+                    <h6 aria-hidden="true" class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
+
+                  </div>
                   <div class="dropdown no-arrow">
                     <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
@@ -834,16 +849,15 @@
   <!-- Track Event Stuff -->
   <script src="./js/track-events.js" defer></script>
 
+  <!--Test js initialization-->
+
+
  
 
-<!-- Start of pendo1311 Zendesk Widget script -->
-<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=a4fa1f13-8076-4948-ab4f-e4e887adbf3a"> </script>
-<!-- End of pendo1311 Zendesk Widget script -->
+<!-- Start of pendoio8681 Zendesk Widget script -->
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=5c37f2bd-4497-4e03-9348-d2f808eff402"> </script>
+<!-- End of pendoio8681 Zendesk Widget script -->
 
-
-
-
-  
 
 
 
