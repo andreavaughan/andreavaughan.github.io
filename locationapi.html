@@ -13,6 +13,11 @@
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
   <!-- Pendo Scripts -->
  <script>
+  let lastAnnotation = { page: 'annotateTest/testing/slash'};
+function annotatedUrl() {
+    let page = lastAnnotation;
+    return page;
+};
     (function(apiKey){
         (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
         v=['initialize','identify','updateOptions','pageLoad','track'];for(w=0,x=v.length;w<x;++w)(function(m){
@@ -47,10 +52,15 @@
                 }, 
 
                 location: {
-                  setUrl: 'http://www.av.testapp.com/client/Profile/test/%2Fxyxydsz%3D%3D',  
-                  // transforms: [{'attr': 'search', 'action': 'Replace', 'data': 'testhere'}], 
+                  // setUrl: 'http://www.av.testapp.com/test',  
+                  transforms: [{'attr': 'search', 'action': 'Replace', 'data': 'testhere'}], 
                      
-                }
+                }, 
+                // annotateUrl: annotatedUrl,
+                // sanitizeUrl: function(annotatedUrl){
+                //   var clean = annotatedUrl.replace('annotateTest', 'wxyz')
+                //   return clean
+                // }
             });
  
     })('e013cfb9-d43a-4469-7bae-4916e01ed7b4');
