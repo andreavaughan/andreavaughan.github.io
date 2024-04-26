@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'nonce-TesT' cdn.pendo.io pendo-io-static.storage.googleapis.com pendo-static-6625304335220736.storage.googleapis.com data.pendo.io app.pendo.io cdn.jsdelivr.net static.zdassets.com widget.intercom.io js.intercomcdn.com fonts.gstatic.com; style-src 'unsafe-inline' pendo-io-static.storage.googleapis.com pendo-static-6625304335220736.storage.googleapis.com app.pendo.io localhost:8000 andreavaughan.github.io fonts.googleapis.com; img-src cdn.pendo.io data.pendo.io pendo-static-6625304335220736.storage.googleapis.com app.pendo.io data: source.unsplash.com localhost:8000 images.unsplash.com; connect-src data.pendo.io pendo-static-6625304335220736.storage.googleapis.com app.pendo.io api.feedback.us.pendo.io; frame-src app.pendo.io portal.feedback.eu.pendo.io feedback.us.pendo.io portal.feedback.us.pendo.io; frame-ancestors app.pendo.io; worker-src blob:">
-  <title>AV Test Site - CSP page
+
+  <title>Different App
   </title>
 
   <!-- Custom fonts for this template-->
@@ -19,71 +19,70 @@
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
 <!-- Pendo Scripts -->
+<script>
 
-  <!-- <script src="./js/initializetest.js" async></script> -->
-<script nonce="TesT">
-   
-
-   (function(apiKey){
+    (function(apiKey){
       (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
       v=['initialize','identify','updateOptions','pageLoad','track'];for(w=0,x=v.length;w<x;++w)(function(m){
           o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
           y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+apiKey+'/pendo.js';
           z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
   
+          // Call this whenever information about your visitors becomes available
+          // Please use Strings, Numbers, or Bools for value types.
+
+
           pendo.initialize({
-            // disableCookies: true, 
-            // disablePersistence: true, 
-            // disableGuides: true,
-
               visitor: {
-                  id:              'visitor6000',   // plz change back to visitor6000 after testing
+                  id:              '',   // plz change back to visitor6000 after testing
                   email:           'visitor6000@email.com',    // Recommended if using Pendo Feedback, or NPS Email
-                  full_name:       'Test',
-                  xtra_data:       'something here for payload',
-                  ins_current_permissions: true,
-                  // testforisempty:  'hi,',
+                  // full_name:       'Test',
+                  // xtra_data:       'something here for payload'
+                  // role:         // Optional
+  
+                  // You can add any additional visitor level key-values here,
+                  // as long as it's not one of the above reserved names.
               },
-
   
               account: {
-                  id:             "account",
-                  wow:            ['wow', 'wow2', 'WOW3'],
-                  testforcode:    "accountName", 
-                  planType:       "testhere"
+                  id:             "",
                   // hostname:     'HOSTNAME',
                   // business_name: 'testbusiness'
-              },
-
-              disableGuides: false,
-              excludeAllText: false, 
-              disableGuidePseudoStyles: false,
+                  // name:         // Optional
+                  // is_paying:    // Recommended if using Pendo Feedback
+                  // monthly_value:// Recommended if using Pendo Feedback
+                  // planLevel:    // Optional
+                  // planPrice:    // Optional
+                  // creationDate: // Optional
+  
+                  // You can add any additional account level key-values here,
+                  // as long as it's not one of the above reserved names.
+              }
           });
- 
-  })('e013cfb9-d43a-4469-7bae-4916e01ed7b4');
+
+          excludeAllText: false;
+
+  })('a5aa42f4-df0b-4d31-6659-8cfb888bad77');
 
 
+  
+  </script>
+  <script src="js/jwtinitialize.js"></script>
 
-</script>
-<script nonce="TesT">
-  window.intercomSettings = {
-    api_base: "https://api-iam.intercom.io",
-    app_id: "cgen6vra"
-  };
-</script>
 
-<script nonce="TesT">
-// We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/cgen6vra'
-(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/cgen6vra';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
-</script>
+  <!-- <script>
+    function goGetThePendoAgent(apiKey){ 
+    (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
 
-<!-- search only version -->
-<script
-  src="https://cdn.jsdelivr.net/npm/algoliasearch@4.17.0/dist/algoliasearch-lite.umd.js"
-  nonce="TesT"
-  integrity="sha256-Lf9DrpGmcRip6OQzbcL6lnvNmoZNSKpyQX5pMlwatWE="
-  crossorigin="anonymous"
-></script>
+v=['initialize','identify','updateOptions','pageLoad','track'];for(w=0,x=v.length;w<x;++w)(function(m){ 
+
+o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]); 
+
+y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+apiKey+'/pendo.js'; 
+
+z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo'); 
+}
+  </script> -->
 
 </head>
 
@@ -121,37 +120,9 @@
         Interface
       </div>
 
-      <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-          <i class="fas fa-fw fa-cog"></i>
-          <span>Components</span>
-        </a>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Custom Components:</h6>
-            <a class="collapse-item" href="buttons.html">Buttons</a>
-            <a class="collapse-item" href="cards.html">Cards</a>
-          </div>
-        </div>
-      </li>
+      
 
-      <!-- Nav Item - Utilities Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-          <i class="fas fa-fw fa-wrench"></i>
-          <span>Utilities</span>
-        </a>
-        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Custom Utilities:</h6>
-            <a class="collapse-item" href="utilities-color.html">Colors</a>
-            <a class="collapse-item" href="utilities-border.html">Borders</a>
-            <a class="collapse-item" href="utilities-animation.html">Animations</a>
-            <a class="collapse-item" href="utilities-other.html">Other</a>
-          </div>
-        </div>
-      </li>
+      
 
       <!-- Divider -->
       <hr class="sidebar-divider">
@@ -162,106 +133,9 @@
       </div>
 
       <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Pages</span>
-        </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Login Screens:</h6>
-            <a class="collapse-item" href="login.html">Login</a>
-            <a class="collapse-item" href="register.html">Register</a>
-            <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-            <div class="collapse-divider"></div>
-            <h6 class="collapse-header">Other Pages:</h6>
-            <a class="collapse-item" href="404.html">404 Page</a>
-            <a class="collapse-item" href="blank.html">Blank Page</a>
-          </div>
-        </div>
-      </li>
-
-      <!-- Nav Item - Charts -->
-      <li class="nav-item">
-        <a class="nav-link" href="charts.html" id="charts-link">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Charts</span></a>
-      </li>
-
-      <!-- Nav Item - Tables -->
-      <li class="nav-item">
-        <a class="nav-link" href="tables.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
-      </li>
-
-      <!-- Nav Item - LocationAPI -->
-      <li class="nav-item">
-        <a class="nav-link" href="locationapi.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Location API - TEST</span></a>
-      </li>
-
-      <!-- Nav Item - Segment Install -->
-      <li class="nav-item">
-        <a class="nav-link" href="segment.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>SEGMENT INSTALL - TEST</span></a>
-
-      <!-- Nav Item - Long URL test -->
-      <li class="nav-item">
-        <a class="nav-link" href="/testreallylongurlwowthisissolongalskjfasdlfagjlijahihoiaiadijdaoijgnajnasflwelqoqrlkjqtpoadoibaoinsgjwotjq3pjgwlabldnsrpsoeeipiwtpj42nl3qhpoahwJ.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Long URL - TEST</span></a>
-
-      </li>
-
-      <!-- Nav Item - GTM test -->
-      <li class="nav-item">
-        <a class="nav-link" href="/tagmanager.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Google Tag Manager - TEST</span></a>
-
-      </li>
-
-      <!-- Nav Item - Iframe different api key test -->
-      <li class="nav-item">
-        <a class="nav-link" href="/iframepage.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Iframed page TEST</span></a>
-
-      </li>
-
-      <!-- Nav Item - Iframe same api key test -->
-      <li class="nav-item">
-        <a class="nav-link" href="/iframepage2.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Iframed page TEST - SAME API KEY</span></a>
-
-      </li>
-
-      <!-- Nav Item - different api key test -->
-      <li class="nav-item">
-        <a class="nav-link" href="/differentapp.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Let's pretend this page is a different app</span></a>
-
-      </li>
-
-            <!-- Nav Item - nested url test -->
-            <li class="nav-item">
-              <a class="nav-link" href="/nestedpagetest/anothernesttest/page.html">
-                <i class="fas fa-fw fa-table"></i>
-                <span>nested url</span></a>
       
-            </li>
 
-            <!-- Nav Item - CSP -->
-      <li class="nav-item">
-        <a class="nav-link" href="csp.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>CSP on this page</span></a>
-      </li>
+      
 
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
@@ -324,13 +198,6 @@
             </li>
 
             <!-- Nav Item - Alerts -->
-            <div class="table-container sc-iAyFgw gPlgsX sc-dnqmqq gXuRiM" data-table-name="explorerUiAssets">
-              <div class="table-actions sc-htoDjs kxDkgK">
-                <button type="button" class="btn btn--tertiary" id="launch-rc" data-analytics-action="launch-rc">
-                  Launch RC
-                </button>
-              </div>
-              </div>
             <li class="nav-item dropdown no-arrow mx-1">
               <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-bell fa-fw"></i>
@@ -484,16 +351,9 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800" id="oe-campaign-settings-account-info-2000">Dashboard</h1>
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" id="feedback-btn-1" data-id="1.0-Nav-Home.Dashboard"><i class="fas fa-download fa-sm text-white-50"></i> 
-                <span class="button-child">
-                  <span class="button-child-child">
-                    Leave Feedback
-                  </span>
-                </span>
-            </a>
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm disabled" id="feedback-btn-3" data-id="1.0-Nav-Home.Dashboard"><i class="fas fa-download fa-sm text-white-50"></i> Test Disabled Button</a>
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-secondary shadow-sm" id="feedback-btn-2" data-id="1.0-Nav-Home.Dashboard"><i class="fas fa-download fa-sm text-white-50"></i> Test Button to Remove</a>
+            <h1 class="h3 mb-0 text-gray-800" id="oe-campaign-settings-account-info-2000">Different Pendo API Key on this page</h1>
+            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" id="feedback-btn-3" data-id="1.0-Nav-Home.Dashboard"><i class="fas fa-download fa-sm text-white-50"></i> Leave Feedback</a>
+            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-secondary shadow-sm" id="feedback-btn-4" data-id="1.0-Nav-Home.Dashboard"><i class="fas fa-download fa-sm text-white-50"></i> Test Button to Remove</a>
           </div>
 
           <!-- Content Row -->
@@ -616,10 +476,7 @@
               <div class="card shadow mb-4">
                 <!-- Card Header - Dropdown -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <div id="revenue-sources1">
-                    <h6 aria-hidden="true" class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
-
-                  </div>
+                  <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
                   <div class="dropdown no-arrow">
                     <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
@@ -777,30 +634,6 @@
         <!-- /.container-fluid -->
 
       </div>
-
-      <p>Click the "Try it" button to toggle between hiding and showing the DIV element:</p>
-
-      <button style="width: 200px; height: auto;" onclick="myFunction()">Try it</button>
-      
-      <div id="myDIV" style="width: 400px; height: 100px; background-color: aquamarine; margin: 50px; display: none;">
-         
-      </div>
-      
-    
-      
-      <script nonce="TesT">
-      function myFunction() {
-        var x = document.getElementById("myDIV");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-          x.textContent = "This is my DIV element for guide targeting."; 
-
-        } else {
-          x.style.display = "none";
-          x.textContent = "";
-        }
-      }
-      </script>
       <!-- End of Main Content -->
 
       <!-- Footer -->
@@ -858,16 +691,12 @@
   <!-- Track Event Stuff -->
   <script src="./js/track-events.js" defer></script>
 
-  <!--Test js initialization-->
-
-
  
 
 
-
-
-
-
+<!-- Start of goose-testhelp Zendesk Widget script -->
+<!-- <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=19285eb3-ab08-473a-a43c-33b949dc105b" defer> </script> -->
+<!-- End of goose-testhelp Zendesk Widget script -->
 </body>
 
 </html>

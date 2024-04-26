@@ -21,56 +21,77 @@
 <!-- Pendo Scripts -->
 
   <!-- <script src="./js/initializetest.js" async></script> -->
-<script nonce="TesT">
-   
 
-   (function(apiKey){
-      (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
-      v=['initialize','identify','updateOptions','pageLoad','track'];for(w=0,x=v.length;w<x;++w)(function(m){
-          o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
-          y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+apiKey+'/pendo.js';
-          z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
-  
-          pendo.initialize({
-            // disableCookies: true, 
-            // disablePersistence: true, 
-            // disableGuides: true,
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
 
-              visitor: {
-                  id:              'visitor6000',   // plz change back to visitor6000 after testing
-                  email:           'visitor6000@email.com',    // Recommended if using Pendo Feedback, or NPS Email
-                  full_name:       'Test',
-                  xtra_data:       'something here for payload',
-                  ins_current_permissions: true,
-                  // testforisempty:  'hi,',
-              },
-
-  
-              account: {
-                  id:             "account",
-                  wow:            ['wow', 'wow2', 'WOW3'],
-                  testforcode:    "accountName", 
-                  planType:       "testhere"
-                  // hostname:     'HOSTNAME',
-                  // business_name: 'testbusiness'
-              },
-
-              disableGuides: false,
-              excludeAllText: false, 
-              disableGuidePseudoStyles: false,
-          });
+<script nonce="TesT" language="javascript" type="text/javascript">
+    (function(apiKey){
+     (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
+     v=['initialize','identify','updateOptions','pageLoad','track'];for(w=0,x=v.length;w<x;++w)(function(m){
+         o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
+         y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+apiKey+'/pendo.js';
+         z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
  
-  })('e013cfb9-d43a-4469-7bae-4916e01ed7b4');
+         pendo.initialize({
+           // disableCookies: true, 
+           // disablePersistence: true, 
+
+             visitor: {
+                 id:              'visitor6000',   // plz change back to visitor6000 after testing
+                 email:           'visitor6000@email.com',    // Recommended if using Pendo Feedback, or NPS Email
+                 full_name:       'Test',
+                 xtra_data:       'something here for payload',
+                 ins_current_permissions: true,
+                 // testforisempty:  'hi,',
+             },
+
+ 
+             account: {
+                 id:             "account",
+                 wow:            ['wow', 'wow2', 'WOW3'],
+                 testforcode:    "accountName", 
+                 planType:       "testhere"
+                 // hostname:     'HOSTNAME',
+                 // business_name: 'testbusiness'
+             },
+
+             disableGuides: false,
+             excludeAllText: false, 
+             disableGuidePseudoStyles: false,
+         });
+
+ })('e013cfb9-d43a-4469-7bae-4916e01ed7b4');
+
+
+  
+// let pendo_options = {
+//   visitor: {
+//     id: '', 
+//     email: ''
+//   }, 
+//   account: {
+//     id: ''
+//   }
+// }
+
+// setTimeout(() => {
+//   pendo.initialize(pendo_options); 
+// }, "2000");
+
 
 
 
 </script>
-<script nonce="TesT">
+
+<!-- <script nonce="TesT">
   window.intercomSettings = {
     api_base: "https://api-iam.intercom.io",
     app_id: "cgen6vra"
   };
-</script>
+</script> -->
 
 <script nonce="TesT">
 // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/cgen6vra'
@@ -262,6 +283,7 @@
           <i class="fas fa-fw fa-table"></i>
           <span>CSP on this page</span></a>
       </li>
+
 
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
