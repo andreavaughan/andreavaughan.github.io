@@ -35,51 +35,51 @@
          y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+apiKey+'/pendo.js';
          z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
 
-          let visitorId = "6000"
+          // let visitorId = "6000"
 
-          if (visitorId !== 'Anonymous') {
-            let visitorRole = 'test';
-            let prefix = 'visitor'
+          // if (visitorId !== 'Anonymous') {
+          //   let visitorRole = 'test';
+          //   let prefix = 'visitor'
 
-            pendo.initialize({
-              visitor: {
-                id: prefix+visitorId,
-                xtra_data: visitorRole
-              }, 
-              account: {
-                id: "account"
-              }
-            });
-          };
+          //   pendo.initialize({
+          //     visitor: {
+          //       id: prefix+visitorId,
+          //       xtra_data: visitorRole
+          //     }, 
+          //     account: {
+          //       id: "account"
+          //     }
+          //   });
+          // };
 
-        //  pendo.initialize({
-        //    // disableCookies: true, 
-        //    // disablePersistence: true, 
+         pendo.initialize({
+           // disableCookies: true, 
+           // disablePersistence: true, 
 
-        //      visitor: {
-        //          id:              'visitor6000',   // plz change back to visitor6000 after testing
-        //          email:           'visitor6000@email.com',    // Recommended if using Pendo Feedback, or NPS Email
-        //          full_name:       'Test',
-        //          xtra_data:       'something here for payload',
-        //          ins_current_permissions: true,
-        //          createdOn:       '5/8/24'
-        //          // testforisempty:  'hi,',
-        //      },
+             visitor: {
+                 id:              'visitor6000',   // plz change back to visitor6000 after testing
+                 email:           'visitor6000@email.com',    // Recommended if using Pendo Feedback, or NPS Email
+                 full_name:       'Test',
+                 xtra_data:       'something here for payload',
+                 ins_current_permissions: true,
+                 createdOn:       '5/8/24'
+                 // testforisempty:  'hi,',
+             },
 
  
-        //      account: {
-        //          id:             "account",
-        //          wow:            ['wow', 'wow2', 'WOW3'],
-        //          testforcode:    "accountName", 
-        //          planType:       "testhere"
-        //          // hostname:     'HOSTNAME',
-        //          // business_name: 'testbusiness'
-        //      },
+             account: {
+                 id:             "account",
+                 wow:            ['wow', 'wow2', 'WOW3'],
+                 testforcode:    "accountName", 
+                 planType:       "testhere"
+                 // hostname:     'HOSTNAME',
+                 // business_name: 'testbusiness'
+             },
 
-        //      disableGuides: false,
-        //      excludeAllText: false, 
-        //      disableGuidePseudoStyles: false,
-        //  });
+             disableGuides: false,
+             excludeAllText: false, 
+             disableGuidePseudoStyles: false,
+         });
 
  })('e013cfb9-d43a-4469-7bae-4916e01ed7b4');
 
@@ -87,17 +87,18 @@
   
 // let pendo_options = {
 //   visitor: {
-//     id: '', 
-//     email: ''
+//     id: 'testvisitorfortraining', 
+//     email: 'me@email.com'
 //   }, 
 //   account: {
-//     id: ''
+//     id: 'account'
 //   }
 // }
 
 // setTimeout(() => {
 //   pendo.initialize(pendo_options); 
-// }, "2000");
+//   console.log('Im initialized!')
+// }, "3000");
 
 
 
