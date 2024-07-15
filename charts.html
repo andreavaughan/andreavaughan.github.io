@@ -505,6 +505,11 @@
                     <h6 class="m-0 font-weight-bold text-primary">
                       Area Chart
                     </h6>
+                    <div style="display: flex; justify-content: end;">
+                      <div id="id-test-guide-custom">&nbsp;</div>
+                      <div>text</div>
+                    </div>
+
                     <button class="btn btn-primary">Edit Chart</button>
                     <button class="btn btn-warning">Save Edit</button>
                   </div>
@@ -845,29 +850,29 @@
 
         // Call this whenever information about your visitors becomes available
         // Please use Strings, Numbers, or Bools for value types.
-        // pendo.initialize({
-        //   visitor: {
-        //     id: "visitor6000", // Required if user is logged in
-        //     // email:        // Recommended if using Pendo Feedback, or NPS Email
-        //     // full_name:    // Recommended if using Pendo Feedback
-        //     // role:         // Optional
+        pendo.initialize({
+          visitor: {
+            id: "visitor6000", // Required if user is logged in
+            // email:        // Recommended if using Pendo Feedback, or NPS Email
+            // full_name:    // Recommended if using Pendo Feedback
+            // role:         // Optional
 
-        //     // You can add any additional visitor level key-values here,
-        //     // as long as it's not one of the above reserved names.
-        //   },
+            // You can add any additional visitor level key-values here,
+            // as long as it's not one of the above reserved names.
+          },
 
-        //   account: {
-        //     // id:           'andrea-test-demo' // Required if using Pendo Feedback
-        //     // name:         // Optional
-        //     // is_paying:    // Recommended if using Pendo Feedback
-        //     // monthly_value:// Recommended if using Pendo Feedback
-        //     // planLevel:    // Optional
-        //     // planPrice:    // Optional
-        //     // creationDate: // Optional
-        //     // You can add any additional account level key-values here,
-        //     // as long as it's not one of the above reserved names.
-        //   }
-        // });
+          account: {
+            // id:           'andrea-test-demo' // Required if using Pendo Feedback
+            // name:         // Optional
+            // is_paying:    // Recommended if using Pendo Feedback
+            // monthly_value:// Recommended if using Pendo Feedback
+            // planLevel:    // Optional
+            // planPrice:    // Optional
+            // creationDate: // Optional
+            // You can add any additional account level key-values here,
+            // as long as it's not one of the above reserved names.
+          }
+        });
       })("e013cfb9-d43a-4469-7bae-4916e01ed7b4");
     </script>
   </body>
