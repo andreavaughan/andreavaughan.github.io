@@ -36,6 +36,19 @@
 
   gtag('config', 'G-C7YX9GT5XG');
 </script>
+<script>
+  function setVariable() {
+      window.dataLayer = window.dataLayer || [];
+      dataLayer.push({
+          'visitorId': visitorVariable,
+          'javascriptVisitor': testJsVar,
+          'event': 'variablesSet'
+      });
+      
+      console.log("variables set and pushed")
+  }
+  setTimeout(setVariable, 3000);
+</script>
 </head>
 
 <body id="page-top">
