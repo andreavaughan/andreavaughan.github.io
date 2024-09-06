@@ -29,17 +29,21 @@
   });
   analytics.page();
   }}();
-
-  analytics.identify('segment3visitor', {
-      name: "My Name", 
-      email: "anotheremail@email.com", 
-      something: "this is a string"
-  });
   analytics.group('segmentaccountid3', {
       accountname: "testaccount", 
       wow: "wow",
       // userId: "segment4visitor"
   });
+  analytics.identify('segment3visitor', {
+      name: "My Name", 
+      email: "anotheremail@email.com", 
+      something: "this is a string"
+  });
+  // analytics.group('segmentaccountid2', {
+  //     accountname: "testaccount", 
+  //     wow: "wow",
+  //     // userId: "segment4visitor"
+  // });
   analytics.track('segmenttrackevent5', {
     something: "else",
     groupId: "segmentaccountid2"
