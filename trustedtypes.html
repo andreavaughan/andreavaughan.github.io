@@ -3,16 +3,16 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta http-equiv="Content-Security-Policy" content="trusted-types pendo; default-src 'self'; script-src 'self' 'unsafe-inline' cdn.pendo.io pendo-io-static.storage.googleapis.com pendo-static-6625304335220736.storage.googleapis.com data.pendo.io app.pendo.io cdn.jsdelivr.net static.zdassets.com widget.intercom.io js.intercomcdn.com fonts.gstatic.com; style-src 'unsafe-inline' pendo-io-static.storage.googleapis.com pendo-static-6625304335220736.storage.googleapis.com app.pendo.io localhost:8000 andreavaughan.github.io fonts.googleapis.com cdn.pendo.io; img-src andreavaughan.github.io cdn.pendo.io data.pendo.io pendo-static-6625304335220736.storage.googleapis.com app.pendo.io data: source.unsplash.com localhost:8000 images.unsplash.com; connect-src data.pendo.io pendo-static-6625304335220736.storage.googleapis.com app.pendo.io api.feedback.us.pendo.io; frame-src app.pendo.io portal.feedback.eu.pendo.io feedback.us.pendo.io portal.feedback.us.pendo.io; frame-ancestors app.pendo.io; worker-src blob:; font-src fonts.gstatic.com localhost:8000 andreavaughan.github.io;">
+        <meta http-equiv="Content-Security-Policy" content="require-trusted-types-for 'script'; default-src 'self'; script-src 'self' 'unsafe-inline' cdn.pendo.io pendo-io-static.storage.googleapis.com pendo-static-6625304335220736.storage.googleapis.com data.pendo.io app.pendo.io cdn.jsdelivr.net static.zdassets.com widget.intercom.io js.intercomcdn.com fonts.gstatic.com; style-src 'unsafe-inline' pendo-io-static.storage.googleapis.com pendo-static-6625304335220736.storage.googleapis.com app.pendo.io localhost:8000 andreavaughan.github.io fonts.googleapis.com cdn.pendo.io; img-src andreavaughan.github.io cdn.pendo.io data.pendo.io pendo-static-6625304335220736.storage.googleapis.com app.pendo.io data: source.unsplash.com localhost:8000 images.unsplash.com; connect-src data.pendo.io pendo-static-6625304335220736.storage.googleapis.com app.pendo.io api.feedback.us.pendo.io; frame-src app.pendo.io portal.feedback.eu.pendo.io feedback.us.pendo.io portal.feedback.us.pendo.io; frame-ancestors app.pendo.io; worker-src blob:; font-src fonts.gstatic.com localhost:8000 andreavaughan.github.io;">
         <title>Trusted Types Test</title>
         <script >
-            // const pendoSRC = "https://cdn.pendo.io/agent/static/e013cfb9-d43a-4469-7bae-4916e01ed7b4/pendo.js";
+            const pendoSRC = "https://cdn.pendo.io/agent/static/e013cfb9-d43a-4469-7bae-4916e01ed7b4/pendo.js";
 
-            // const myPolicy = trustedTypes.createPolicy('pendo', {
-            //     createScriptURL: (pendoSRC) => "https://cdn.pendo.io/agent/static/e013cfb9-d43a-4469-7bae-4916e01ed7b4/pendo.js"
-            // });
-
-            // myPolicy.createScriptURL(pendoSRC);
+            const myPolicy = trustedTypes.createPolicy('pendo', {
+                createHTML: (input) => input,
+                createScriptURL: (input) => input
+            });
+            
 
             setTimeout(() => {
                 (function (apiKey) {
@@ -33,7 +33,7 @@
                     })(v[w]);
                 y = e.createElement(n);
                 y.async = !0;
-                y.src = "https://cdn.pendo.io/agent/static/"+ apiKey +"/pendo.js";
+                y.src = myPolicy.createScriptURL(pendoSRC);
                 z = e.getElementsByTagName(n)[0];
                 z.parentNode.insertBefore(y, z);
                 })(window, document, "script", "pendo");
