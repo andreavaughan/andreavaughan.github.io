@@ -86,7 +86,6 @@
         //     excludeEvents: ['load', 'click', 'focus', 'submit', 'change', 'track'],
         // },
 
-             disableGuides: false,
              excludeAllText: false, 
              disableGuidePseudoStyles: false,
              disableCookies: false
@@ -535,7 +534,7 @@
 
         <!-- Begin Page Content -->
 
-        <div class="container-fluid">
+        <div class="container-fluid" id="main-content">
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
@@ -639,7 +638,11 @@
             <div class="col">
               <p>Click the "Try it" button to toggle between hiding and showing the DIV element:</p>
 
-              <button style="width: 200px; height: auto;" onclick="myFunction()">Try it</button>
+              <button hidden style="width: 200px; height: auto;" onclick="myFunction()">
+                <div>
+                  Try it
+                </div>
+              </button>
             
               <div id="myDIV" style="width: 400px; height: 100px; background-color: aquamarine; margin: 50px; display: none;">
             </div>

@@ -12,7 +12,7 @@
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
   <!-- Pendo Scripts -->
- <script>
+ <!-- <script>
 //   let lastAnnotation = { page: 'annotateTest/testing/slash'};
 // function annotatedUrl() {
 //     let page = lastAnnotation;
@@ -51,21 +51,32 @@
                     // as long as it's not one of the above reserved names.
                 }, 
 
-                // location: {
-                //   //setUrl: 'https://www.test.com/testwillappearinpendo',  
-                //   transforms: [{'attr': 'pathname', 'action': 'Replace', 'data': 'test_here'}], 
+                location: {
+                  //setUrl: 'https://www.test.com/testwillappearinpendo?utm_campaign=spring2025',  
+                  transforms: [{
+                    'attr': 'hash',
+                    'action': 'Replace',
+                    'data': function() {
+                      var hash = window.location.hash;
+                      if (hash != '#test') {
+                        return ""
+                      }
+                      else return hash;
+                    }
+                  
+                  }], 
                      
-                // }, 
+                }, 
 
                 // annotateUrl: annotatedUrl,
-                sanitizeUrl: function(annotatedUrl){
-                  var clean = annotatedUrl.replace('locationapi', 'sanitizedurl')
-                  return clean
-                }
+                // sanitizeUrl: function(annotatedUrl){
+                //   var clean = annotatedUrl.replace('locationapi', 'sanitizedurl')
+                //   return clean
+                // }
             });
  
     })('e013cfb9-d43a-4469-7bae-4916e01ed7b4');
-    </script>
+    </script> -->
     <!-- <script defer>
       function callLocationApi(){
         pendo.location.setUrl('http://localhost:8000/shiny-new-url')
@@ -77,6 +88,7 @@
     
        <!-- Other Location Api Test -->
    <script src="./js/locationapi.js" defer></script>
+   <script src="./js/hashes.js" defer></script>
 </head>
 <body>
     <!-- Page Wrapper -->
@@ -387,7 +399,7 @@
 
         <!-- Begin Page Content -->
         <div>
-            <h2>This may look like a duplicate of the form page, but here I'm testing the location API</h2>
+            <h3>This may look like a duplicate of the form page, but here I'm testing the location API</h3>
         </div>
         
         <div class="container-fluid">
@@ -412,6 +424,65 @@
           <button id="testforrclaunch" style="visibility: hidden">
             Test
           </button>
+
+        </div>
+        <div>
+          <h2 id="paragraph">
+            Paragraph
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus vehicula tellus, at commodo tellus consectetur semper. Nullam blandit, augue vitae pretium mattis, quam elit consequat orci, non placerat nisi est sit amet augue. Vivamus in nulla ut lacus egestas eleifend. Aenean a metus pulvinar, accumsan leo id, ullamcorper arcu. Duis auctor dictum ex eget aliquet. Integer mollis mi at purus placerat, ac venenatis sem placerat. Ut quis lacus arcu. Duis mattis fringilla cursus. Donec non condimentum sem, id tincidunt ipsum. Vivamus sed rhoncus ante, in dictum massa. Nunc pulvinar quam in imperdiet elementum. Sed luctus dolor ut ipsum tincidunt, nec tempor risus faucibus. Cras sem nunc, iaculis at justo non, pretium iaculis magna. Quisque tempor scelerisque porttitor. Vestibulum ante nisl, semper vel ultrices volutpat, tincidunt nec nisl. Cras vitae nunc velit.
+          </p>
+          <h2 id="paragraphtwo">
+            Paragraph 2
+          </h2>
+        <p>
+Nullam sodales, magna quis porta consequat, elit felis vehicula turpis, ac lacinia elit quam non leo. Pellentesque facilisis ipsum eget finibus blandit. Nulla quis luctus sapien. Nam vitae lobortis odio, at lacinia arcu. Nunc ac nisi dictum, ultricies eros sed, imperdiet mauris. In tortor libero, porta fermentum elit at, faucibus commodo neque. Ut ut tincidunt dolor. Vestibulum vel magna vehicula, varius neque id, ultricies urna. Phasellus volutpat molestie lorem, id tincidunt nibh tristique eget. Praesent fringilla ligula neque, a laoreet tortor tempus id. Nunc vitae viverra nunc, ac rhoncus nibh. Nunc sed dui malesuada, volutpat ante vitae, gravida mi. Pellentesque ut interdum quam. In vel risus vitae dui egestas pharetra eget eget dui.
+<br>
+Donec pulvinar tempus enim quis pharetra. Donec at quam mollis, ultricies nibh sit amet, dictum nisl. Fusce molestie, mauris a faucibus congue, est massa condimentum felis, sit amet mollis felis felis in est. Mauris sed maximus sem. Suspendisse euismod justo ipsum, ac luctus arcu eleifend a. Nam egestas quis diam vitae sodales. Donec accumsan ligula sed nulla lobortis, vitae tincidunt eros ultrices. Cras pharetra vehicula ex ut ornare. Nullam ut dolor justo. Nam nec tortor ac purus fringilla dictum quis in neque. Nam semper placerat gravida.
+    </p>
+    <h2 id="anotherparagraph">
+            Oh look another
+          </h2>
+        <p>
+Mauris vel risus dictum, tristique eros a, mattis arcu. Etiam consectetur malesuada orci, tincidunt gravida nisl mollis ac. In a lobortis massa. Fusce lectus sem, dictum at vestibulum ac, tincidunt lacinia ligula. Praesent auctor tristique urna quis auctor. Etiam faucibus purus mauris, eu egestas lectus suscipit vitae. In mattis tempus sodales. Maecenas feugiat arcu in mattis pretium. Sed vestibulum gravida ante vel laoreet.
+<br>
+
+Suspendisse in metus dapibus, pellentesque nisi a, fermentum felis. Nam sapien libero, consequat maximus varius ut, efficitur eget nunc. Cras lorem sem, viverra ullamcorper urna sit amet, rhoncus varius elit. Vivamus sagittis congue erat, ac blandit tortor mollis vel. Maecenas eu sapien et libero mollis interdum. Integer vel luctus est. In id mauris lectus. Vestibulum dui lacus, finibus id mauris eget, faucibus fermentum justo. Pellentesque vel venenatis nunc. Phasellus mattis ante mauris, at commodo lacus lacinia vitae. In bibendum at tellus eu interdum. Donec ut viverra ipsum. Praesent ut sapien quis tellus rutrum tristique. Nulla ultricies sagittis massa.
+    </p>
+    <h2 id="paragraphagain">
+            Paragraph again
+          </h2>
+        <p>
+Praesent sit amet tristique augue. Duis tincidunt vestibulum velit, non vulputate tortor. Cras sit amet odio vehicula, mollis felis vel, dictum sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam semper turpis eget fermentum pellentesque. Nunc malesuada magna ac metus iaculis dapibus. Pellentesque aliquet tellus non erat porttitor placerat.
+<br>
+
+In velit turpis, bibendum non faucibus sagittis, luctus sit amet arcu. Maecenas quis nulla nisl. Aliquam erat volutpat. Nullam in risus lacus. Curabitur elementum vel velit vel vehicula. Donec laoreet egestas tortor. Nam auctor dapibus lectus, ac ultrices justo. Praesent viverra convallis quam. Integer tincidunt ex non nibh dignissim dictum eu vitae tortor.
+<br>
+
+Duis vel ornare ex, in finibus felis. Morbi neque magna, suscipit eget consequat vitae, vulputate ut lectus. Pellentesque egestas faucibus dui, eu molestie purus scelerisque ac. Nulla vehicula augue quis risus pellentesque, vitae placerat tellus mattis. Mauris tristique leo vel arcu fermentum efficitur. In laoreet a purus at tristique. Duis sodales arcu at ante commodo, eget convallis mi tempus. In facilisis ullamcorper commodo. Nullam id risus arcu. Donec viverra ante at elit mattis, eu condimentum libero convallis. Proin condimentum non nisi vitae accumsan. Nam dictum tempus nunc nec dapibus. Suspendisse potenti. Cras tempus nibh eget turpis pretium consequat. Proin iaculis vel metus non molestie.
+    </p>
+    <h2 id="finalparagraph">
+            You get the idea
+          </h2>
+        <p>
+Mauris sed tellus sed purus vehicula iaculis. Proin imperdiet pellentesque purus eu maximus. Quisque nec lorem eu massa pharetra ultricies luctus ut massa. Duis vel tempor massa. Ut vitae tortor quam. Suspendisse ullamcorper ex eget odio facilisis placerat. Integer euismod massa eu risus condimentum, in interdum nisl rhoncus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sit amet elit efficitur, scelerisque ex in, convallis tortor. Aenean laoreet, augue vehicula tristique maximus, augue nisl malesuada mi, sed fermentum nisi tortor nec augue. Praesent tempus mauris libero, sed semper eros rhoncus vel. Praesent pellentesque, ante in tempus ullamcorper, risus justo lacinia ante, fringilla tempor eros quam molestie tortor. Duis suscipit arcu blandit erat scelerisque semper.
+<br>
+
+Integer vehicula maximus elit, elementum feugiat dui elementum in. Pellentesque facilisis magna ut diam mollis accumsan. Vivamus varius laoreet purus id pellentesque. Fusce vulputate, est vel accumsan facilisis, libero lectus commodo purus, at rhoncus eros tortor id eros. Phasellus finibus, magna vitae iaculis tempus, sem arcu rutrum tortor, eu interdum est orci at augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi arcu justo, vehicula in posuere ac, feugiat quis massa. Morbi ante quam, laoreet ut lectus sit amet, tempus pellentesque ante. Nam et est varius massa finibus bibendum.
+          </p>
+          <h2 id="test">
+            I expect the hash "#test" to not be cleared 
+          </h2>
+        <p>
+Mauris sed tellus sed purus vehicula iaculis. Proin imperdiet pellentesque purus eu maximus. Quisque nec lorem eu massa pharetra ultricies luctus ut massa. Duis vel tempor massa. Ut vitae tortor quam. Suspendisse ullamcorper ex eget odio facilisis placerat. Integer euismod massa eu risus condimentum, in interdum nisl rhoncus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sit amet elit efficitur, scelerisque ex in, convallis tortor. Aenean laoreet, augue vehicula tristique maximus, augue nisl malesuada mi, sed fermentum nisi tortor nec augue. Praesent tempus mauris libero, sed semper eros rhoncus vel. Praesent pellentesque, ante in tempus ullamcorper, risus justo lacinia ante, fringilla tempor eros quam molestie tortor. Duis suscipit arcu blandit erat scelerisque semper.
+<br>
+
+Integer vehicula maximus elit, elementum feugiat dui elementum in. Pellentesque facilisis magna ut diam mollis accumsan. Vivamus varius laoreet purus id pellentesque. Fusce vulputate, est vel accumsan facilisis, libero lectus commodo purus, at rhoncus eros tortor id eros. Phasellus finibus, magna vitae iaculis tempus, sem arcu rutrum tortor, eu interdum est orci at augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi arcu justo, vehicula in posuere ac, feugiat quis massa. Morbi ante quam, laoreet ut lectus sit amet, tempus pellentesque ante. Nam et est varius massa finibus bibendum.
+          </p>
+          <div style="height: 500px;">
+            <p>some content here</p>
+          </div>
         </div>
         <!-- /.container-fluid -->
 
