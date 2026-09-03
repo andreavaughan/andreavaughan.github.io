@@ -88,7 +88,10 @@
 
              excludeAllText: false, 
              disableGuidePseudoStyles: false,
-             disableCookies: false
+             disableCookies: false,
+             disableGuides: false,
+             stopGuides: false
+      
          });
 
 
@@ -116,6 +119,9 @@
 
 </script>
 
+<!-- Start of pendoio-41357 Zendesk Widget script -->
+<script id="ze-snippet" nonce="TesT" src="https://static.zdassets.com/ekr/snippet.js?key=baa7b0e8-f078-4387-94f8-68aa44dce607"> </script>
+<!-- End of pendoio-41357 Zendesk Widget script -->
 
 <!-- <script nonce="TesT">
   window.intercomSettings = {
@@ -124,10 +130,10 @@
   };
 </script> -->
 
-<script nonce="TesT">
+<!-- <script nonce="TesT">
 // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/cgen6vra'
 (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/cgen6vra';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
-</script>
+</script> -->
 
 <!-- search only version -->
 <script
@@ -541,7 +547,7 @@
             <h1 class="h3 mb-0 text-gray-800 heading" id="oe-campaign-settings-account-info-2000">Dashboard & More</h1>
             <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" id="feedback-btn-1" data-id="1.0-Nav-Home.Dashboard"><i class="fas fa-download fa-sm text-white-50"></i> 
                 <span class="button-child">
-                  <span id="inner-feedback" class="button-child-child">
+                  <span id="inner-feedback" class="button-child-child" data-id="feedback">
                     Leave & Feedback
                   </span>
                 </span>
